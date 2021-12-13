@@ -1,0 +1,3206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="shortcut icon" href="images/logo2.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css"> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+     <title>Apply-form</title>
+</head>
+<body class="er">
+  <div class="row">
+    <div class="col-12">
+     <br>
+     <h1 class="text-center font-weight-bold" ><a style="font-family: 'Lato', sans-serif; color:white; " href="/">THE RAGTAG BAND</a></h1>
+ <br>
+ <br>
+  </div>
+  <div class="col-12 hh">
+    <marquee behavior="" direction="left"  class="text-white " style="margin-left: 590px; font-family:'Lato', sans-serif;" scrollamount="5" WIDTH="25%" >The Ripple Effect Has Begun Folks!</marquee>
+  </div>
+  </div>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-lg-8 col-8 jumbotron  ">
+             <div class="pt-5 text-center">
+               <h1>The Treasure Mapplication:</h1>
+              <p><strong style="color: red;"> </strong></p>
+             </div>
+            <form action="/apply" method="POST" name="ragtagform">
+             <h2 class="text-center">PERSONAL INFORMATION</h2>
+             <br>
+             <p>Email <strong style="color: red;">*</strong></p>
+             <input type="text" name="canemail" placeholder="Your Email">
+             <br>
+             <p></p>
+             <p>Name?</p>
+             <input type="text" name="canname" placeholder="Your Name">
+             <br>
+             <p></p>
+             <p>What state are you running in? *</p>
+             <select name="stateop" id="">
+               <option value="choose">Choose</option>
+               <option value="Alabama">Alabama</option>
+               <option value="Alaska">Alaska</option>
+               <option value="Arizona">Arizona</option>              
+               <option value="Arkansas">Arkansas</option>
+               <option value="California">California</option>
+               <option value="Colorado">Colorado</option>
+               <option value="Connecticut">Connecticut</option>
+               <option value="Delaware">Delaware</option>
+               <option value="Florida">Florida</option>
+               <option value="Georgia">Georgia</option>
+               <option value="Hawaii">Hawaii</option>
+               <option value="Idaho">Idaho</option>
+               <option value="Illinois">Illinois</option>
+               <option value="Indiana">Indiana</option>
+               <option value="lowa">lowa</option>
+               <option value="Kansas">Kansas</option>
+               <option value="Kentucky">Kentucky</option>
+               <option value="Louisiana">Louisiana</option>
+               <option value="Maine">Maine</option>
+               <option value="MaryLand">MaryLand</option>
+               <option value="Massachusetts">Massachusetts</option>
+               
+               <option value="choose">Michigan</option>
+               <option value="Alabama">Minnesota</option>
+               <option value="Alabama">Mississippi</option>
+               <option value="Alabama">Missouri</option>
+               
+               <option value="choose">Nebraska</option>
+               <option value="Alabama">Nevada</option>
+               <option value="Alabama">New Hampshire</option>
+               <option value="Alabama">New Jersey</option>
+               
+               <option value="choose">New Mexico</option>
+               <option value="Alabama">NewYork</option>
+               <option value="Alabama">North California</option>
+               <option value="Alabama">North Dakota</option>
+               <option value="Ohio">Ohio</option>             
+               <option value="choose">Oklahoma</option>
+               <option value="Alabama">Pennsylvania</option>
+               <option value="Alabama">Rhode Island</option>
+               <option value="Alabama">South California</option>
+               
+               <option value="choose">South Dakota</option>
+               <option value="Alabama">Tennessee</option>
+               <option value="Alabama">Texas</option>
+               <option value="Alabama">Utah</option>
+               
+               <option value="choose">Vermont</option>
+               <option value="Alabama">Virginia</option>
+               <option value="Alabama">West Virginia</option>
+               <option value="Alabama">Washington</option>
+               <option value="Washington DC">Washington DC</option>               
+               <option value="choose">Wisconsin</option>
+               <option value="Alabama">Wyoming</option>
+               <option value="Alabama">Puerto Rico</option>
+               <option value="Alabama">American Samoa</option>
+               <option value="Alabama">Guam</option>
+               <option value="Alabama">North Mariana Islands</option>
+               <option value="Alabama">U.S Virgin Islands</option>
+             
+             </select>
+             <br>
+             <br>
+             <p>What year do you plan to run? *</p>
+            <select name="yearop" id="">
+              <option value="choose">Choose</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+            <br>
+            <br>
+            <p>What is the exact date of your election? (If it is TBD, please say that and let us know once this information is available *</p>
+            <input type="text" name="elecdate" placeholder="enter date">
+            <br>
+            <br>
+            <p><strong> Position Disclaimer: </strong>The next two questions are in regard to what level of election and which position at said level you are running for. We are aware that not every level of office deals with the same issues and the issues at these levels can vary based on state. If you come across this, where, when filling out our Policy section, the question doesn't apply, please answer as if it did</p>
+             
+             <br>
+             <br>
+             <p>Level of Election? *</p>
+            <p> <input type="radio" name="federal" id="" value="Federal"> Federal </p>
+            <p> <input type="radio" name="federal" id="" value="State"> State </p>
+            <p> <input type="radio" name="federal" id="" value="Muncipal"> Muncipal </p>
+            <p> <input type="radio" name="federal" id="" value="Tribal"> Tribal </p>
+            
+            <br>
+            <br>
+            <p>Position? </p>
+            <p><input type="text" name="position" id="" placeholder="Your Answer"></p>
+            <br>
+            <br>
+            <p>Give a brief biography of yourself:</p>
+            <p>
+              <input type="text" name="biography" placeholder="Your Answer">
+            </p>
+            <br>
+            <br>
+            <p>Are you the incumbent in your race?</p>
+            <p><input type="radio" name="race" value="Yes">Yes</p>
+            <p><input type="radio" name="race" value="No">No</p>
+            <br>
+            <br>
+            <p>Have you run for this seat before?</p>
+            <p><input type="radio" name="race1" value="Yes">Yes</p>
+            <p><input type="radio" name="race1" value="No">No</p>
+            <br>
+            <br>
+            <p>How do you identify politically (i.e. Democrat, progressive, socialist, communist, etc.)</p>
+            <input type="text" name="politics" placeholder="Your answer">
+            <br>
+            <br>
+            <p>Has The Ragtag Band endorsed you in another election?</p>
+            <p><input type="radio" name="re" value="Yes">Yes</p>
+            <p><input type="radio" name="re" value="NO">NO</p>
+            <br>
+            <br>
+            <p>Have you currently been endorsed by any of the following groups? (If you ran in a previous election and any of these endorsed you, please check "Other" and fill in at the bottom AND if there are other prominent groups not listed here, please put them and the election in which they endorsed as well)</p>
+              <p><input type="radio" name="party" value="Brand New Congress">Brand New Congress</p>
+              <p><input type="radio" name="party" value="Justice Democrats">Justice Democrats</p>
+              <p><input type="radio" name="party" value="Democratic Socialists of America (national)">Democratic Socialists of America (national)</p>
+              <p><input type="radio" name="party" value="Democratic Socialists of America (chapter)">Democratic Socialists of America (chapter)</p>
+              <p><input type="radio" name="party" value="Our Revolution (national)">Our Revolution (national)</p>
+              <p><input type="radio" name="party" value="Our Revolution (chapter)">Our Revolution (chapter)</p>
+              <p><input type="radio" name="party" value="Sunrise Movement (national)">Sunrise Movement (national)</p>
+              <p><input type="radio" name="party" value="Sunrise Movement (chapter)">Sunrise Movement (chapter)</p>
+              <p><input type="radio" name="party" value="The Green Party">The Green Party</p>
+              <p><input type="radio" name="party" value="The Movement for a People's Party/The People's Party">The Movement for a People's Party/The People's Party</p>
+              <p><input type="radio" name="party" value="The Working Families Party">The Working Families Party</p>
+              <p><input type="radio" name="party" value="Progressive List">Progressive List</p>
+              <p><input type="radio" name="party" value="The National Solidarity Movement">The National Solidarity Movement</p>
+              <p><input type="radio" name="party" value="The Progressive Guide">The Progressive Guide</p>
+              <p><input type="radio" name="party" value="United Lef">United Left</p>
+              <p><input type="radio" name="party" value="Leftists 4 Office">Leftists 4 Office</p>
+              <p><input type="radio" name="party" value="OTHER">OTHER
+              <span><input type="text" placeholder="Your Answer" name="otherinfo"></span>
+              </p>
+
+              <br>
+              <br>
+              <p>Provide a link to your campaign website:</p>
+              <input type="text" name="campweb" placeholder="Your Answer">
+              <br>
+              <br>
+              <p>What is your Twitter @? *</p>
+              <input type="text" name="twitacc" placeholder="Your Answer">
+              <br>
+              <br>
+              <p>When The Ragtag Band chooses to support/endorse a candidate, we normally do at least one promotional Tweet Storm (on Twitter) to ideally get them trending, but more realistically just get them as much exposure as possible. In doing so, we ask for whatever the candidate is looking for at the time (donations, volunteers, etc., all of the above). If we choose to support/endorse you, we would like to hit the ground running. Please check off all that apply and also check off "Other" in order to give us a preferred hashtag and let us know if there's anything else you would like out of the Tweet Storm that you think we could potentially provide. *</p>
+              <p><input type="radio" name="typeof" value="Donations" >Donations</p>
+              <p><input type="radio" name="typeof" value="volunteer" >volunteer</p>
+              <br>
+              <br>
+              <h2>POLICY</h2>
+              <br>
+              <p>Ahhh so you've made it through the treacherous Basic Information. Section 1 is complete! Hope you're ready to delve even further into the briney deep with our Policy section. At this juncture, you have, theoretically, already taken our Abridged survey, which lays out the basics of what we want to know. If you haven't, never fear! While we do not require a majority of the questions, the 20 questions asked on the Abridged are required here so as not to be missed. Batten down the hatches! The tempest brews and it is only the crew that is able to adapt with the waves that survives! Yaharrr!</p>
+              <br>
+              <br>
+              <h2>Voting Systems/Voter's Rights</h2>
+              <br>
+              <br>
+
+
+              <p>Will you fight to abolish the Electoral College? *</p>
+              <p><input type="radio" name="ec" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec" value="Yes">Yes</p>
+              <p><input type="radio" name="ec" value="No">No</p>
+              <p><input type="radio" name="ec"  value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec"  value="Other" >Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to implement Ranked Choice Voting (or some other system where the Popular Vote takes precedent, and vote splitting is not incurred, such as Star)? Please specify under "Other" if necessary. *</p>
+              <p><input type="radio" name="ec1" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec1" value="Yes">Yes</p>
+              <p><input type="radio" name="ec1" value="No">No</p>
+              <p><input type="radio" name="ec1" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec1" value="Other">Other
+              
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight for a national ballot initiative power that gives Americans the power to bypass Congress and put laws on the books directly?</p>
+              <p><input type="radio" name="ec2" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec2" value="Yes">Yes</p>
+              <p><input type="radio" name="ec2" value="No">No</p>
+              <p><input type="radio" name="ec2" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec2" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to lower the voting age? If yes, what age? (Enter under "Other")</p>
+              <p><input type="radio" name="ec3" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec3" value="Yes">Yes</p>
+              <p><input type="radio" name="ec3" value="No">No</p>
+              <p><input type="radio" name="ec3" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec3" value="Other">Other
+              <span><input type="text" placeholder="Your Answer" name="ec304" ></span>
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to switch from single-member districts to multi-member districts?</p>
+              <p><input type="radio" name="ec4" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec4" value="Yes">Yes</p>
+              <p><input type="radio" name="ec4" value="No">No</p>
+              <p><input type="radio" name="ec4" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec4" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to enact automatic voter registration?</p>
+              <p><input type="radio" name="ec5" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec5" value="Yes">Yes</p>
+              <p><input type="radio" name="ec5" value="No">No</p>
+              <p><input type="radio" name="ec5" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec5" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to make election day a national holiday and allow early voting by mail?</p>
+              <p><input type="radio" name="ec6" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec6" value="Yes">Yes</p>
+              <p><input type="radio" name="ec6" value="No">No</p>
+              <p><input type="radio" name="ec6" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec6" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to abolish gerrymandering and use independent commissions to draw districts to favor competitiveness?</p>
+              <p><input type="radio" name="ec7" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec7" value="Yes">Yes</p>
+              <p><input type="radio" name="ec7" value="No">No</p>
+              <p><input type="radio" name="ec7" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec7" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to lower ballot access requirements for independent candidates and third parties and equalize the requirements for all parties?</p>
+              <p><input type="radio" name="ec8" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec8" value="Yes">Yes</p>
+              <p><input type="radio" name="ec8" value="No">No</p>
+              <p><input type="radio" name="ec8" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec8" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to return the management of presidential debates to a nonpartisan independent commission, invite all candidates, and make it easier to get on enough state ballots to be able to win the presidency?</p>
+              <p><input type="radio" name="ec9" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec9" value="Yes">Yes</p>
+              <p><input type="radio" name="ec9" value="No">No</p>
+              <p><input type="radio" name="ec9" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec9" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to switch from our patchwork of state and local election and ballot access rules to national standards that promote access, fairness and competitiveness?</p>
+              <p><input type="radio" name="ec10" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec10" value="Yes">Yes</p>
+              <p><input type="radio" name="ec10" value="No">No</p>
+              <p><input type="radio" name="ec10" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec10" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to restore integrity and trust in our democracy by switching to hand-counted paper ballots with routine post-election audits?</p>
+              <p><input type="radio" name="ec11" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec11" value="Yes">Yes</p>
+              <p><input type="radio" name="ec11" value="No">No</p>
+              <p><input type="radio" name="ec11" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec11" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to mandate the retention of paper ballots and scanned ballot images?</p>
+              <p><input type="radio" name="ec12" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec12" value="Yes">Yes</p>
+              <p><input type="radio" name="ec12" value="No">No</p>
+              <p><input type="radio" name="ec12" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec12" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to require that all election hardware and software be open source and secure? (editor- there should be no election software and hardware in use for elections. - paper ballots, hand counted).</p>
+              <p><input type="radio" name="ec13" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec13" value="Yes">Yes</p>
+              <p><input type="radio" name="ec13" value="No">No</p>
+              <p><input type="radio" name="ec13" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec13" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to hold election officials and processes accountable?</p>
+              <p><input type="radio" name="ec14" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec14" value="Yes">Yes</p>
+              <p><input type="radio" name="ec14" value="No">No</p>
+              <p><input type="radio" name="ec14" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec14" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to ensure that all precincts are equipped with ample polling stations to handle capacity without long lines?</p>
+              <p><input type="radio" name="ec15" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec15" value="Yes">Yes</p>
+              <p><input type="radio" name="ec15" value="No">No</p>
+              <p><input type="radio" name="ec15" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec15" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to end voter ID provisions, often used to suppress the vote in communities of color?</p>
+              <p><input type="radio" name="ec16" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec16" value="Yes">Yes</p>
+              <p><input type="radio" name="ec16" value="No">No</p>
+              <p><input type="radio" name="ec16" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec16" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to halt voter roll purges and interstate cross-check programs, which exist to combat the statistically non-existent issue of voter fraud and end up disenfranchising thousands of honest voters?</p>
+              <p><input type="radio" name="ec17" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec17" value="Yes">Yes</p>
+              <p><input type="radio" name="ec17" value="No">No</p>
+              <p><input type="radio" name="ec17" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec17" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to implement a systematic exit polling system to monitor the vote according to U.N. guidelines?</p>
+              <p><input type="radio" name="ec18" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec18" value="Yes">Yes</p>
+              <p><input type="radio" name="ec18" value="No">No</p>
+              <p><input type="radio" name="ec18" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec18" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to implement a systematic exit polling system to monitor the vote according to U.N. guidelines?</p>
+              <p><input type="radio" name="ec19" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec19" value="Yes">Yes</p>
+              <p><input type="radio" name="ec19" value="No">No</p>
+              <p><input type="radio" name="ec19" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec19" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to enact congressional term limits?</p>
+              <p><input type="radio" name="ec20" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec20" value="Yes">Yes</p>
+              <p><input type="radio" name="ec20" value="No">No</p>
+              <p><input type="radio" name="ec20" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec20" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to restore the right to vote to those currently as well as formerly incarcerated?</p>
+              <p><input type="radio" name="ec21" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec21" value="Yes">Yes</p>
+              <p><input type="radio" name="ec21" value="No">No</p>
+              <p><input type="radio" name="ec21" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec21" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to give Washington DC and Puerto Rico statehood?</p>
+              <p><input type="radio" name="ec22" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec22" value="Yes">Yes</p>
+              <p><input type="radio" name="ec22" value="No">No</p>
+              <p><input type="radio" name="ec22" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec22" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to put an end to discriminatory laws and the purging of minority-community names from voting rolls by restoring the Voting Rights Act?
+</p>
+              <p><input type="radio" name="ec23" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec23" value="Yes">Yes</p>
+              <p><input type="radio" name="ec23" value="No">No</p>
+              <p><input type="radio" name="ec23" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec23" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you fight to abolish the Electoral College? *Will you fight to reform the Senate to make it more democratic?</p>
+              <p><input type="radio" name="ec24" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec24" value="Yes">Yes</p>
+              <p><input type="radio" name="ec24" value="No">No</p>
+              <p><input type="radio" name="ec24" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec24" value="Other">Other
+              </p>
+              
+               
+
+               <br>
+               <br>
+                <p>Will you fight to make Supreme Court seats an elected position?</p>
+              <p><input type="radio" name="ec25" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec25" value="Yes">Yes</p>
+              <p><input type="radio" name="ec25" value="No">No</p>
+              <p><input type="radio" name="ec25" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec25" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>          
+                <p>If you would like to provide any other feedback on this section, you may do so here</p>
+                <input type="text" placeholder="Your Answer" name="ec26">
+                <br>
+                <br>
+                <p>Scenario: It is clear just about every representative in office bows to The Establishment eventually and, so, our voting system must evolve. What do we do to get to the point of being able to abolish the Electoral College? There is a movement in place to create a National Popular Vote Interstate Compact and 15 states have already signed up. However, simply using a Popular Vote method would not eliminate any fear of vote-splitting. It is known that the Ranked Choice Voting method has gained major traction nationwide at the state and local levels, and it is believed that only RCV has a federal plan in the works to create a National Ranked Choice Voting Interstate Compact to break the duopoly and eliminate some of our current issues. With this being said, it is also clear RCV is not without its flaws. Is RCV/NRCV your preferred alternative to the current First-Past-The-Post system? If it is not, would you still be willing to use the groundswell in place that has been built around RCV to create and establish NRCV, which can then be used as a stepping stone for progressively better voting systems once better candidates are elected and not beholden to The Establishment? *</p>
+                <input type="text" name="ec27" placeholder="Your Answer">
+              
+               
+
+               <br>
+               <br>
+{{!-- ******************three pages done********************* --}}
+               <h2>Money In Politics, Most Notably, PAC Money</h2>
+               <br>
+               <br>
+               <p>Will you take Corporate/Corporate PAC money? *</p>
+              <p><input type="radio" name="ec28" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec28" value="Yes">Yes</p>
+              <p><input type="radio" name="ec28" value="No">No</p>
+              <p><input type="radio" name="ec28" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec28" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you take money from Super PACs? *</p>
+              <p><input type="radio" name="ec29" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec29" value="Yes">Yes</p>
+              <p><input type="radio" name="ec29" value="No">No</p>
+              <p><input type="radio" name="ec29" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec29" value="Other">Other
+              </p>
+               
+
+               <br>
+               <br>
+               <p>Will you take money from PACs? (Please use the box under "Other" if you want to elaborate). *</p>
+              <p><input type="radio" name="ec30" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec30" value="Yes">Yes</p>
+              <p><input type="radio" name="ec30" value="No">No</p>
+              <p><input type="radio" name="ec30" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec30" value="Other">Other
+              <span><input  type="text" placeholder="Your Answer" name="ec305"></span>
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban super PACs, independent expenditures and dark money, shutting down unlimited and nontransparent outside spending? *</p>
+              <p><input type="radio" name="ec31" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec31" value="Yes">Yes</p>
+              <p><input type="radio" name="ec31" value="No">No</p>
+              <p><input type="radio" name="ec31" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec31" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for publicly funded elections?</p>
+              <p><input type="radio" name="ec32" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec32" value="Yes">Yes</p>
+              <p><input type="radio" name="ec32" value="No">No</p>
+              <p><input type="radio" name="ec32" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec32" value="Other">Other
+              \</p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to close the revolving door between Washington and Wall Street, whereby corporations reward politicians for doing their bidding with cushy jobs and high salaries once they leave office?</p>
+              <p><input type="radio" name="ec33" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec33" value="Yes">Yes</p>
+              <p><input type="radio" name="ec33" value="No">No</p>
+              <p><input type="radio" name="ec33" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec33" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to prevent corporate executives from holding elected office or being appointed to regulatory positions, where they presently oversee the industries they just departed and collect big bonuses for regulating favorably?</p>
+              <p><input type="radio" name="ec34" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec34" value="Yes">Yes</p>
+              <p><input type="radio" name="ec34" value="No">No</p>
+              <p><input type="radio" name="ec34" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec34" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban bundling and switch to the full public funding of our elections?</p>
+              <p><input type="radio" name="ec35" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec35" value="Yes">Yes</p>
+              <p><input type="radio" name="ec35" value="No">No</p>
+              <p><input type="radio" name="ec35" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec35" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+             <p>Will you fight to reverse the Citizens United decision that flooded politics with big money? *</p>
+              <p><input type="radio" name="ec36" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec36" value="Yes">Yes</p>
+              <p><input type="radio" name="ec36" value="No">No</p>
+              <p><input type="radio" name="ec36" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec36" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you co-sponsor the For the People Act (HR 1 & SB 1)</p>
+              <p><input type="radio" name="ec37" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec37" value="Yes">Yes</p>
+              <p><input type="radio" name="ec37" value="No">No</p>
+              <p><input type="radio" name="ec37" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec37" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to ban lobbyists from making contributions to parties, politicians, their staff, and their families?</p>
+              <p><input type="radio" name="ec38" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec38" value="Yes">Yes</p>
+              <p><input type="radio" name="ec38" value="No">No</p>
+              <p><input type="radio" name="ec38" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec38" value="Other">Other
+               </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to strengthen the definition of a lobbyist and eliminate other lobbyist loopholes?</p>
+              <p><input type="radio" name="ec39" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec39" value="Yes">Yes</p>
+              <p><input type="radio" name="ec39" value="No">No</p>
+              <p><input type="radio" name="ec39" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec39" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to prohibit politicians from fundraising during working hours?</p>
+              <p><input type="radio" name="ec40" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec40" value="Yes">Yes</p>
+              <p><input type="radio" name="ec40" value="No">No</p>
+              <p><input type="radio" name="ec40" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec40" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                <h2>Medicare For All</h2>
+                <br>
+                <br>
+                  <p>Will you fight for a single payer system that covers prenatal, mental, vision, dental, preventive care, prescription drugs and all other medical needs? (Such as Medicare for All, assuming the legislation included the above). *</p>
+              <p><input type="radio" name="ec41" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec41" value="Yes">Yes</p>
+              <p><input type="radio" name="ec41" value="No">No</p>
+              <p><input type="radio" name="ec41" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec41" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to include women’s hygiene products under Medicare for All?</p>
+              <p><input type="radio" name="ec42" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec42" value="Yes">Yes</p>
+              <p><input type="radio" name="ec42" value="No">No</p>
+              <p><input type="radio" name="ec42" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec42" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                             <p>Will you fight to lower drug prices?</p>
+              <p><input type="radio" name="ec43" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec43" value="Yes">Yes</p>
+              <p><input type="radio" name="ec43" value="No">No</p>
+              <p><input type="radio" name="ec43" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec43" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                             <p>Will you fight to expand Medicaid/Medicare?</p>
+              <p><input type="radio" name="ec44" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec44" value="Yes">Yes</p>
+              <p><input type="radio" name="ec44" value="No">No</p>
+              <p><input type="radio" name="ec44" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec44" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                             <p>Will you fight to lower the age of Medicare?</p>
+              <p><input type="radio" name="ec45" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec45" value="Yes">Yes</p>
+              <p><input type="radio" name="ec45" value="No">No</p>
+              <p><input type="radio" name="ec45" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec45" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                             <p>Will you fight to maintain coverage for pre-existing conditions?</p>
+              <p><input type="radio" name="ec46" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec46" value="Yes">Yes</p>
+              <p><input type="radio" name="ec46" value="No">No</p>
+              <p><input type="radio" name="ec46" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec46" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+                             <p>Will you fight for an “opt-out” instead of the current “opt-in” organ donation system?</p>
+              <p><input type="radio" name="ec47" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec47" value="Yes">Yes</p>
+              <p><input type="radio" name="ec47" value="No">No</p>
+              <p><input type="radio" name="ec47" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec47" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expand Social Security benefits and increase cost-of-living-adjustments to keep up with rising medical and prescription drug costs?</p>
+              <p><input type="radio" name="ec48" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec48" value="Yes">Yes</p>
+              <p><input type="radio" name="ec48" value="No">No</p>
+              <p><input type="radio" name="ec48" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec48" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>            
+              <h2>Environmental Justice & A Green New Deal</h2>
+              <br>
+              <br>
+              <p>Will you fight to enact a Green New Deal, putting millions of Americans to work in good paying jobs that repair our crumbling roads, bridges, airports, dams, harbors and waterways. Modernizing the electrical grid for a renewable energy future? *</p>
+              <p><input type="radio" name="ec49" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec49" value="Yes">Yes</p>
+              <p><input type="radio" name="ec49" value="No">No</p>
+              <p><input type="radio" name="ec49" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec49" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to enforce the Clean Water Act and strengthen laws meant to safeguard our drinking water?</p>
+              <p><input type="radio" name="ec50" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec50" value="Yes">Yes</p>
+              <p><input type="radio" name="ec50" value="No">No</p>
+              <p><input type="radio" name="ec50" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec50" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to decentralize our energy system with renewable technologies like rooftop solar, wind and geothermal to satisfy energy needs on the local and building level?</p>
+              <p><input type="radio" name="ec51" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec51" value="Yes">Yes</p>
+              <p><input type="radio" name="ec51" value="No">No</p>
+              <p><input type="radio" name="ec51" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec51" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to promote energy-efficient building codes, net metering and ambitious renewable portfolio standards?</p>
+              <p><input type="radio" name="ec52" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec52" value="Yes">Yes</p>
+              <p><input type="radio" name="ec52" value="No">No</p>
+              <p><input type="radio" name="ec52" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec52" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to make all new energy capacity clean and renewable, ending coal, oil, gas and nuclear developments?</p>
+              <p><input type="radio" name="ec53" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec53" value="Yes">Yes</p>
+              <p><input type="radio" name="ec53" value="No">No</p>
+              <p><input type="radio" name="ec53" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec53" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to replace fossil fuel subsidies with investments in renewable energy and use a carbon tax to incentivize the adoption of green energy?</p>
+              <p><input type="radio" name="ec54" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec54" value="Yes">Yes</p>
+              <p><input type="radio" name="ec54" value="No">No</p>
+              <p><input type="radio" name="ec54" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec54" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to join other developed countries in accelerating the transition from internal combustion to electric vehicles?</p>
+              <p><input type="radio" name="ec55" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec55" value="Yes">Yes</p>
+              <p><input type="radio" name="ec55" value="No">No</p>
+              <p><input type="radio" name="ec55" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec55" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban domestic oil drilling and fracking, which releases more greenhouse gases than coal due to its methane content?</p>
+              <p><input type="radio" name="ec56" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec56" value="Yes">Yes</p>
+              <p><input type="radio" name="ec56" value="No">No</p>
+              <p><input type="radio" name="ec56" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec56" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reduce deforestation and desertification?</p>
+              <p><input type="radio" name="ec57" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec57" value="Yes">Yes</p>
+              <p><input type="radio" name="ec57" value="No">No</p>
+              <p><input type="radio" name="ec57" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec57" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to raise clean air and clean water standards to save thousands of lives and hundreds of billions of dollars in annual medical costs?</p>
+              <p><input type="radio" name="ec58" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec58" value="Yes">Yes</p>
+              <p><input type="radio" name="ec58" value="No">No</p>
+              <p><input type="radio" name="ec58" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec58" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to preserve public lands and prevent resource exploitation in national parks such as the Arctic National Wildlife Refuge?</p>
+              <p><input type="radio" name="ec59" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec59" value="Yes">Yes</p>
+              <p><input type="radio" name="ec59" value="No">No</p>
+              <p><input type="radio" name="ec59" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec59" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to protect the health of neighborhoods of color by establishing and enforcing strict environmental laws?</p>
+              <p><input type="radio" name="ec60" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec60" value="Yes">Yes</p>
+              <p><input type="radio" name="ec60" value="No">No</p>
+              <p><input type="radio" name="ec60" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec60" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Farming</h2>
+              <br>
+              <br>
+              <p>Will you fight to end the barbaric practice of factory farming and switch to free range animal farming?</p>
+              <p><input type="radio" name="ec61" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec61" value="Yes">Yes</p>
+              <p><input type="radio" name="ec61" value="No">No</p>
+              <p><input type="radio" name="ec61" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec61" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to safeguard animal welfare?</p>
+              <p><input type="radio" name="ec62" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec62" value="Yes">Yes</p>
+              <p><input type="radio" name="ec62" value="No">No</p>
+              <p><input type="radio" name="ec62" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec62" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to keep control of farm and ranch land in the hands of family-run proprietorships which leads to fair and competitive agricultural markets which in turn support healthy socioeconomic conditions in rural communities?</p>
+              <p><input type="radio" name="ec63" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec63" value="Yes">Yes</p>
+              <p><input type="radio" name="ec63" value="No">No</p>
+              <p><input type="radio" name="ec63" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec63" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to encourage local food production and sustainable farming practices?</p>
+              <p><input type="radio" name="ec64" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec64" value="Yes">Yes</p>
+              <p><input type="radio" name="ec64" value="No">No</p>
+              <p><input type="radio" name="ec64" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec64" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to eliminate food deserts and ensure the universal availability of nutritious food to everyone. Ban the use of carcinogenic food colorings, additives and hormones?</p>
+              <p><input type="radio" name="ec65" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec65" value="Yes">Yes</p>
+              <p><input type="radio" name="ec65" value="No">No</p>
+              <p><input type="radio" name="ec65" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec65" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to eliminate agricultural subsidies that amount to corporate welfare for big agribusiness?</p>
+              <p><input type="radio" name="ec66" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec66" value="Yes">Yes</p>
+              <p><input type="radio" name="ec66" value="No">No</p>
+              <p><input type="radio" name="ec66" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec66" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to promote vertical farming, which eliminates the need for fertilizers, pesticides and the expensive and polluting transportation of food to cities?</p>
+              <p><input type="radio" name="ec67" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec67" value="Yes">Yes</p>
+              <p><input type="radio" name="ec67" value="No">No</p>
+              <p><input type="radio" name="ec67" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec67" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to promote new farmers and farming opportunities, high-level farm conservation and investment in clean energy and renewable products?</p>
+              <p><input type="radio" name="ec68" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec68" value="Yes">Yes</p>
+              <p><input type="radio" name="ec68" value="No">No</p>
+              <p><input type="radio" name="ec68" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec68" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to encourage equitable access to healthy, preferably organic food, protect the bee population by cutting down on pesticides, develop strategies to address climate change and its effect on farming, and provide for improved care and welfare of animals?</p>
+              <p><input type="radio" name="ec69" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec69" value="Yes">Yes</p>
+              <p><input type="radio" name="ec69" value="No">No</p>
+              <p><input type="radio" name="ec69" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec69" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to encourage crop rotation and other practices that avoid the desertification of arable lands?</p>
+              <p><input type="radio" name="ec70" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec70" value="Yes">Yes</p>
+              <p><input type="radio" name="ec70" value="No">No</p>
+              <p><input type="radio" name="ec70" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec70" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Infrastructure</h2>
+              <br>
+              <br>
+              <p>Will you fight to repair our aging and leaking drinking water pipes, meters and wastewater treatment plants and rid of all contaminants?</p>
+              <p><input type="radio" name="ec71" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec71" value="Yes">Yes</p>
+              <p><input type="radio" name="ec71" value="No">No</p>
+              <p><input type="radio" name="ec71" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec71" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expand bus lines, subway systems, high speed rail and repair/replace older rail and other means of public transportation?</p>
+              <p><input type="radio" name="ec72" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec72" value="Yes">Yes</p>
+              <p><input type="radio" name="ec72" value="No">No</p>
+              <p><input type="radio" name="ec72" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec72" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reduce public transit fares to broaden access and take more cars off the road?</p>
+              <p><input type="radio" name="ec73" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec73" value="Yes">Yes</p>
+              <p><input type="radio" name="ec73" value="No">No</p>
+              <p><input type="radio" name="ec73" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec73" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to classify the internet as a public utility and bring the country online with universal high-speed community broadband that covers rural communities?</p>
+              <p><input type="radio" name="ec74" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec74" value="Yes">Yes</p>
+              <p><input type="radio" name="ec74" value="No">No</p>
+              <p><input type="radio" name="ec74" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec74" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expand public parks, public libraries and free community spaces?</p>
+              <p><input type="radio" name="ec75" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec75" value="Yes">Yes</p>
+              <p><input type="radio" name="ec75" value="No">No</p>
+              <p><input type="radio" name="ec75" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec75" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+
+              <h2>Housing Reform</h2>
+              <br>
+              <br>
+              <p>Will you fight for guaranteed housing? *</p>
+              <p><input type="radio" name="ec76" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec76" value="Yes">Yes</p>
+              <p><input type="radio" name="ec76" value="No">No</p>
+              <p><input type="radio" name="ec76" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec76" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Worker's Rights</h2>
+              <br>
+              <br>
+              <p>Will you fight for AT LEAST a $15 Federal Minimum Wage? Please state what you feel the minimum wage should be (Enter under the "Other" box). *</p>
+              <p><input type="radio" name="ec77" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec77" value="Yes">Yes</p>
+              <p><input type="radio" name="ec77" value="No">No</p>
+              <p><input type="radio" name="ec77" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec77" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for AT LEAST a $15 Federal Minimum Wage? Please state what you feel the minimum wage should be (Enter under the "Other" box). *</p>
+              <p><input type="radio" name="ec78" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec78" value="Yes">Yes</p>
+              <p><input type="radio" name="ec78" value="No">No</p>
+              <p><input type="radio" name="ec78" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec78" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to raise the tipped minimum wage from $2.13 an hour to $15 an hour?</p>
+              <p><input type="radio" name="ec79" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec79" value="Yes">Yes</p>
+              <p><input type="radio" name="ec79" value="No">No</p>
+              <p><input type="radio" name="ec79" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec79" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for Universal Basic Income? If "Yes", please enter under "Other" what you think the amount should be and the frequency with which it is issued (weekly, monthly, bi-monthly etc.)</p>
+              <p><input type="radio" name="ec80"  value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec80"  value="Yes">Yes</p>
+              <p><input type="radio" name="ec80"  value="No">No</p>
+              <p><input type="radio" name="ec80"  value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec80"  value="Other">Other
+              <span><input  type="text" placeholder="Your Answer" name="ec306"></span>
+              </p>
+               
+
+               <br>
+              <br>
+              <p>If you believe in a Universal Basic Income will you fight to tie the amount to inflation?</p>
+              <p><input type="radio" name="ec81" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec81" value="Yes">Yes</p>
+              <p><input type="radio" name="ec81" value="No">No</p>
+              <p><input type="radio" name="ec81" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec81" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for a Federal Jobs Guarantee?</p>
+              <p><input type="radio" name="ec82" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec82" value="Yes">Yes</p>
+              <p><input type="radio" name="ec82" value="No">No</p>
+              <p><input type="radio" name="ec82" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec82" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for paid maternity leave?</p>
+              <p><input type="radio" name="ec83" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec83" value="Yes">Yes</p>
+              <p><input type="radio" name="ec83" value="No">No</p>
+              <p><input type="radio" name="ec83" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec83" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for paternity leave?</p>
+              <p><input type="radio" name="ec84" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec84" value="Yes">Yes</p>
+              <p><input type="radio" name="ec84" value="No">No</p>
+              <p><input type="radio" name="ec84" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec84" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require employers to provide a minimum of 12 weeks of paid family leave? How many weeks do you believe is appropriate? (Enter under the "Other" box)</p>
+              <p><input type="radio" name="ec85" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec85" value="Yes">Yes</p>
+              <p><input type="radio" name="ec85" value="No">No</p>
+              <p><input type="radio" name="ec85" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec85" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require employers to provide twelve weeks of paid medical leave? How many weeks do you believe is appropriate? (Enter under the "Other" box)</p>
+              <p><input type="radio" name="ec86" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec86" value="Yes">Yes</p>
+              <p><input type="radio" name="ec86" value="No">No</p>
+              <p><input type="radio" name="ec86" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec86"  value="Other">Other
+              <span><input  type="text" placeholder="Your Answer" name="ec307"></span>
+              </p> 
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require employers to provide paid vacation and sick leave so that parents can stay home to take care of a sick child?</p>
+              <p><input type="radio" name="ec87" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec87" value="Yes">Yes</p>
+              <p><input type="radio" name="ec87" value="No">No</p>
+              <p><input type="radio" name="ec87" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec87" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to increase paid vacation leave?</p>
+              <p><input type="radio" name="ec88" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec88" value="Yes">Yes</p>
+              <p><input type="radio" name="ec88" value="No">No</p>
+              <p><input type="radio" name="ec88" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec88" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support the rights of employees to organize into unions, collectively bargain and strike?</p>
+              <p><input type="radio" name="ec89" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec89" value="Yes">Yes</p>
+              <p><input type="radio" name="ec89" value="No">No</p>
+              <p><input type="radio" name="ec89" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec89" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to grant workers the option to collectively purchase factories and plants as an alternative to shutting them down?</p>
+              <p><input type="radio" name="ec90" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec90" value="Yes">Yes</p>
+              <p><input type="radio" name="ec90" value="No">No</p>
+              <p><input type="radio" name="ec90" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec90" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to socialize the workplace by encouraging the creation of worker cooperatives?</p>
+              <p><input type="radio" name="ec91" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec91" value="Yes">Yes</p>
+              <p><input type="radio" name="ec91" value="No">No</p>
+              <p><input type="radio" name="ec91" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec91" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require overtime pay across the board and work against practices to circumvent overtime pay, such as averaging hours over longer pay periods?</p>
+              <p><input type="radio" name="ec92" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec92" value="Yes">Yes</p>
+              <p><input type="radio" name="ec92" value="No">No</p>
+              <p><input type="radio" name="ec92" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec92" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to outlaw unpaid internships that exploit young adults entering the workforce?</p>
+              <p><input type="radio" name="ec93" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec93" value="Yes">Yes</p>
+              <p><input type="radio" name="ec93" value="No">No</p>
+              <p><input type="radio" name="ec93" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec93" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to remove stigmas, to legalize sex work and for better protection of sex workers?</p>
+              <p><input type="radio" name="ec94" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec94" value="Yes">Yes</p>
+              <p><input type="radio" name="ec94" value="No">No</p>
+              <p><input type="radio" name="ec94" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec94" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Education</h2>
+              <br>
+              <br>
+              <p>Will you fight to make public education free from pre-kindergarten through college (community college, public universities and trade schools)? *</p>
+              <p><input type="radio" name="ec95" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec95" value="Yes">Yes</p>
+              <p><input type="radio" name="ec95" value="No">No</p>
+              <p><input type="radio" name="ec95" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec95" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ensure access to universal childcare and Head Start programs?</p>
+              <p><input type="radio" name="ec96" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec96" value="Yes">Yes</p>
+              <p><input type="radio" name="ec96" value="No">No</p>
+              <p><input type="radio" name="ec96" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec96" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for free school breakfast, lunch, dinner?</p>
+              <p><input type="radio" name="ec97" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec97" value="Yes">Yes</p>
+              <p><input type="radio" name="ec97" value="No">No</p>
+              <p><input type="radio" name="ec97" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec97" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for school choice? If no, please explain under the "Other" box?</p>
+              <p><input type="radio" name="ec98" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec98" value="Yes">Yes</p>
+              <p><input type="radio" name="ec98" value="No">No</p>
+              <p><input type="radio" name="ec98" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec98" value="Other">Other
+              <span><input type="text" placeholder="Your Answer" name="ec308"></span>
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for additional school funding for under performing schools?</p>
+              <p><input type="radio" name="ec99" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec99" value="Yes">Yes</p>
+              <p><input type="radio" name="ec99" value="No">No</p>
+              <p><input type="radio" name="ec99" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec99" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to create a framework for school discrimination and bullying policies (to protect minority students)?</p>
+              <p><input type="radio" name="ec100" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec100" value="Yes">Yes</p>
+              <p><input type="radio" name="ec100" value="No">No</p>
+              <p><input type="radio" name="ec100" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec100" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to move away from Standardized Testing and Common Core?</p>
+              <p><input type="radio" name="ec101" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec101" value="Yes">Yes</p>
+              <p><input type="radio" name="ec101" value="No">No</p>
+              <p><input type="radio" name="ec101" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec101" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to teach critical thinking, creativity, inquisitiveness, skepticism, cooperation, and participatory learning over memorization and obedience?</p>
+              <p><input type="radio" name="ec102" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec102" value="Yes">Yes</p>
+              <p><input type="radio" name="ec102" value="No">No</p>
+              <p><input type="radio" name="ec102" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec102" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to keep student-to-teacher ratios low?</p>
+              <p><input type="radio" name="ec103" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec103" value="Yes">Yes</p>
+              <p><input type="radio" name="ec103" value="No">No</p>
+              <p><input type="radio" name="ec103" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec103" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reverse the privatization of schools and to support high-quality free online supplemental learning?</p>
+              <p><input type="radio" name="ec104" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec104" value="Yes">Yes</p>
+              <p><input type="radio" name="ec104" value="No">No</p>
+              <p><input type="radio" name="ec104" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec104" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to encourage mentoring and expanding support for special education services and after-school extracurricular programs?</p>
+              <p><input type="radio" name="ec105" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec105" value="Yes">Yes</p>
+              <p><input type="radio" name="ec105" value="No">No</p>
+              <p><input type="radio" name="ec105" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec105" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to raise teacher pay, protect teachers’ unions and make sure that they have the resources needed to educate effectively and be able to shine, without having to spend their own money on school supplies for their classroom and students?</p>
+              <p><input type="radio" name="ec106" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec106" value="Yes">Yes</p>
+              <p><input type="radio" name="ec106" value="No">No</p>
+              <p><input type="radio" name="ec106" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec106" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ensure quality curriculum and for textbooks that accurately portray science and our nation’s history?</p>
+              <p><input type="radio" name="ec107" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec107" value="Yes">Yes</p>
+              <p><input type="radio" name="ec107" value="No">No</p>
+              <p><input type="radio" name="ec107" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec107" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to teach safe sex in order to keep sexually transmitted diseases and unplanned pregnancies low?</p>
+              <p><input type="radio" name="ec108" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec108" value="Yes">Yes</p>
+              <p><input type="radio" name="ec108" value="No">No</p>
+              <p><input type="radio" name="ec108" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec108" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to abolish the $1.3 trillion in student loan debt that is shackling a generation of young people? *</p>
+              <p><input type="radio" name="ec109" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec109" value="Yes">Yes</p>
+              <p><input type="radio" name="ec109" value="No">No</p>
+              <p><input type="radio" name="ec109" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec109" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to Boost America’s high-tech innovation with investments in basic research and STEM education?</p>
+              <p><input type="radio" name="ec110" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec110" value="Yes">Yes</p>
+              <p><input type="radio" name="ec110" value="No">No</p>
+              <p><input type="radio" name="ec110" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec110" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Economic Justice</h2>
+              <br>
+              <br>
+              <p>Will you fight for a Wealth Tax? *</p>
+              <p><input type="radio" name="ec111" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec111" value="Yes">Yes</p>
+              <p><input type="radio" name="ec111" value="No">No</p>
+              <p><input type="radio" name="ec111" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec111" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to restore higher taxes on corporations and the wealthy, requiring them to pay their fair share of the costs involved in the public infrastructure and services that power their companies?</p>
+              <p><input type="radio" name="ec112" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec112" value="Yes">Yes</p>
+              <p><input type="radio" name="ec112" value="No">No</p>
+              <p><input type="radio" name="ec112" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec112" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to increase the inheritance tax for the rich?</p>
+              <p><input type="radio" name="ec113" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec113" value="Yes">Yes</p>
+              <p><input type="radio" name="ec113" value="No">No</p>
+              <p><input type="radio" name="ec113" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec113" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to raise the capital gains tax which allows billionaires to pay a lower tax rate than nurses and truck drivers?</p>
+              <p><input type="radio" name="ec114" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec114" value="Yes">Yes</p>
+              <p><input type="radio" name="ec114" value="No">No</p>
+              <p><input type="radio" name="ec114" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec114" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to close tax loopholes that allow multi-billion dollar corporations to pay effective tax rates of zero?</p>
+              <p><input type="radio" name="ec115" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec115" value="Yes">Yes</p>
+              <p><input type="radio" name="ec115" value="No">No</p>
+              <p><input type="radio" name="ec115" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec115" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end corporate welfare as we know it?</p>
+              <p><input type="radio" name="ec116" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec116" value="Yes">Yes</p>
+              <p><input type="radio" name="ec116" value="No">No</p>
+              <p><input type="radio" name="ec116" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec116" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban corporate inversions and the use of offshore tax havens that cost our country more than $150 billion in annual tax revenue?</p>
+              <p><input type="radio" name="ec117" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec117" value="Yes">Yes</p>
+              <p><input type="radio" name="ec117" value="No">No</p>
+              <p><input type="radio" name="ec117" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec117" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to revive Glass-Steagall and break up the big banks?</p>
+              <p><input type="radio" name="ec118" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec118" value="Yes">Yes</p>
+              <p><input type="radio" name="ec118" value="No">No</p>
+              <p><input type="radio" name="ec118" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec118" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pass financial transactions tax and regulate the sale of derivatives?</p>
+              <p><input type="radio" name="ec119" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec119" value="Yes">Yes</p>
+              <p><input type="radio" name="ec119" value="No">No</p>
+              <p><input type="radio" name="ec119" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec119" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reduce and cap credit card interest rates?</p>
+              <p><input type="radio" name="ec120" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec120" value="Yes">Yes</p>
+              <p><input type="radio" name="ec120" value="No">No</p>
+              <p><input type="radio" name="ec120" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec120" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reign in corporate power by breaking up monopolies, enforcing antitrust laws and reversing the consolidation of businesses?</p>
+              <p><input type="radio" name="ec121" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec121" value="Yes">Yes</p>
+              <p><input type="radio" name="ec121" value="No">No</p>
+              <p><input type="radio" name="ec121" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec121" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban corporate stock buybacks that are used to manipulate the stock market and taxable income, to reduce investment in R&D, and to inflate CEO compensation?</p>
+              <p><input type="radio" name="ec122" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec122" value="Yes">Yes</p>
+              <p><input type="radio" name="ec122" value="No">No</p>
+              <p><input type="radio" name="ec122" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec122" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to eliminate conflicts of interest and increase transparency at the Federal Reserve, ensuring that it operates as a public bank for the people of the US?</p>
+              <p><input type="radio" name="ec123" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec123" value="Yes">Yes</p>
+              <p><input type="radio" name="ec123" value="No">No</p>
+              <p><input type="radio" name="ec123" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec123" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to enforce stricter oversight of banks, revoking the banking licenses for those that repeatedly engage in criminal, fraudulent, discriminatory and negligent activity at the public’s expense?</p>
+              <p><input type="radio" name="ec124" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec124" value="Yes">Yes</p>
+              <p><input type="radio" name="ec124" value="No">No</p>
+              <p><input type="radio" name="ec124" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec124" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to immediately revoke the licenses of banks found to be financing terrorism (foreign and domestic) and international drug cartels that presently get off with minor fines?</p>
+              <p><input type="radio" name="ec125" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec125" value="Yes">Yes</p>
+              <p><input type="radio" name="ec125" value="No">No</p>
+              <p><input type="radio" name="ec125" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec125" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to prohibit banks from writing off fines from criminal activity as tax deductions?</p>
+              <p><input type="radio" name="ec126" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec126" value="Yes">Yes</p>
+              <p><input type="radio" name="ec126" value="No">No</p>
+              <p><input type="radio" name="ec126" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec126" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expand public banking and postal banking, charter public banks in each state, with regional and city banks, and support a national postal bank, similar to those in many developed nations?</p>
+              <p><input type="radio" name="ec127" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec127" value="Yes">Yes</p>
+              <p><input type="radio" name="ec127" value="No">No</p>
+              <p><input type="radio" name="ec127" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec127" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end too-big-to-jail and hold accountable financial executives who defraud the public?</p>
+              <p><input type="radio" name="ec128" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec128" value="Yes">Yes</p>
+              <p><input type="radio" name="ec128" value="No">No</p>
+              <p><input type="radio" name="ec128" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec128" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pass anti-corruption laws by referendum, where possible, and fight for a constitutional amendment that declares that corporations are not people and money is not speech?</p>
+              <p><input type="radio" name="ec129" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec129" value="Yes">Yes</p>
+              <p><input type="radio" name="ec129" value="No">No</p>
+              <p><input type="radio" name="ec129" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec129" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for better representation for all American territories (American Samoa, US Virgin Islands, Guam and the Northern Mariana Islands?), and for them to receive the same benefits as all US Citizens?</p>
+              <p><input type="radio" name="ec130" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec130" value="Yes">Yes</p>
+              <p><input type="radio" name="ec130" value="No">No</p>
+              <p><input type="radio" name="ec130" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec130" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Do you know what Modern Monetary Theory (MMT) is? *</p>
+              <p><input type="radio" name="ec131" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec131" value="Yes">Yes</p>
+              <p><input type="radio" name="ec131" value="No">No</p>
+              <p><input type="radio" name="ec131" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec131" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>If you answered “Yes” to knowing what MMT is, please explain how you would answer the common challenge to progressive policies: “How would you pay for it?” through the lens of MMT.</p>
+              <input type="text" name="ec133" placeholder="Your Answer">
+              <br>
+              <br>
+              <p>If you answered “No” to knowing what MMT is, would you be willing to learn more from MMT economic experts about how federal spending is not related to tax collection?</p>
+              <p><input type="radio" name="ec132" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec132" value="Yes">Yes</p>
+              <p><input type="radio" name="ec132" value="No">No</p>
+              <p><input type="radio" name="ec132" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec132" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to include churches as tax paying entities?</p>
+              <p><input type="radio" name="ec134" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec134" value="Yes">Yes</p>
+              <p><input type="radio" name="ec134" value="No">No</p>
+              <p><input type="radio" name="ec134" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec134" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+             <h2>Ending the Prison Industrial Complex</h2>
+             <br>
+             <br>
+              <p>Will you fight to abolish private prisons, which incentivize inhumane conditions and high recidivism?</p>
+              <p><input type="radio" name="ec135" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec135" value="Yes">Yes</p>
+              <p><input type="radio" name="ec135" value="No">No</p>
+              <p><input type="radio" name="ec135" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec135" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to shut down the school to prison pipeline, which targets people of color?</p>
+              <p><input type="radio" name="ec136" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec136" value="Yes">Yes</p>
+              <p><input type="radio" name="ec136" value="No">No</p>
+              <p><input type="radio" name="ec136" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec136" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to replace punitive incarceration with a restorative justice system that focuses on rehabilitating people which studies show is the most effective criminal justice system in the world?</p>
+              <p><input type="radio" name="ec137" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec137" value="Yes">Yes</p>
+              <p><input type="radio" name="ec137" value="No">No</p>
+              <p><input type="radio" name="ec137" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec137" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban the practice of using arrest and incarceration quotas?</p>
+              <p><input type="radio" name="ec138" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec138" value="Yes">Yes</p>
+              <p><input type="radio" name="ec138" value="No">No</p>
+              <p><input type="radio" name="ec138" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec138" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to abolish the death penalty? *</p>
+              <p><input type="radio" name="ec139" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec139" value="Yes">Yes</p>
+              <p><input type="radio" name="ec139" value="No">No</p>
+              <p><input type="radio" name="ec139" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec139" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ban the felony checkbox on employment forms and help pave a path to jobs upon release from prison?</p>
+              <p><input type="radio" name="ec140" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec140" value="Yes">Yes</p>
+              <p><input type="radio" name="ec140" value="No">No</p>
+              <p><input type="radio" name="ec140" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec140" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to demilitarize police by banning and reversing the transfer of military weapons to domestic police forces?</p>
+              <p><input type="radio" name="ec141" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec141" value="Yes">Yes</p>
+              <p><input type="radio" name="ec141" value="No">No</p>
+              <p><input type="radio" name="ec141" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec141" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end Section 1033, which would stop militarizing the police with military spare equipment using tax dollars?</p>
+              <p><input type="radio" name="ec142" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec142" value="Yes">Yes</p>
+              <p><input type="radio" name="ec142" value="No">No</p>
+              <p><input type="radio" name="ec142" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec142" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end Section 1033, which would stop militarizing the police with military spare equipment using tax dollars?
+</p>
+              <p><input type="radio" name="ec143" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec143" value="Yes">Yes</p>
+              <p><input type="radio" name="ec143" value="No">No</p>
+              <p><input type="radio" name="ec143" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec143" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reallocate funds from ballooning police budgets back to ailing schools and social services?</p>
+              <p><input type="radio" name="ec144" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec144" value="Yes">Yes</p>
+              <p><input type="radio" name="ec144" value="No">No</p>
+              <p><input type="radio" name="ec144" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec144" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to review all forced mandatory sentencing cases and release prisoners convicted of nonviolent minor drug charges?</p>
+              <p><input type="radio" name="ec145" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec145" value="Yes">Yes</p>
+              <p><input type="radio" name="ec145" value="No">No</p>
+              <p><input type="radio" name="ec145" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec145" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to create new laws for the allowable use of force?</p>
+              <p><input type="radio" name="ec146" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec146" value="Yes">Yes</p>
+              <p><input type="radio" name="ec146" value="No">No</p>
+              <p><input type="radio" name="ec146" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec146" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to eliminate mandatory minimums which result in sentencing disparities between Black, Latino and White people?</p>
+              <p><input type="radio" name="ec147" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec147" value="Yes">Yes</p>
+              <p><input type="radio" name="ec147" value="No">No</p>
+              <p><input type="radio" name="ec147" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec147" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end the criminalization of mental illness that puts more mentally ill people in prisons than treatment facilities?</p>
+              <p><input type="radio" name="ec148" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec148" value="Yes">Yes</p>
+              <p><input type="radio" name="ec148" value="No">No</p>
+              <p><input type="radio" name="ec148" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec148" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to abolish government torture, indefinite detention and extrajudicial assassination?</p>
+              <p><input type="radio" name="ec149" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec149" value="Yes">Yes</p>
+              <p><input type="radio" name="ec149" value="No">No</p>
+              <p><input type="radio" name="ec149" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec149" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to defend habeas corpus?</p>
+              <p><input type="radio" name="ec150" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec150" value="Yes">Yes</p>
+              <p><input type="radio" name="ec150" value="No">No</p>
+              <p><input type="radio" name="ec150" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec150" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to take marijuana off the federal government’s list of outlawed drugs?</p>
+              <p><input type="radio" name="ec151" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec151" value="Yes">Yes</p>
+              <p><input type="radio" name="ec151" value="No">No</p>
+              <p><input type="radio" name="ec151" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec151" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for the Federal LEGALIZATION (not decriminalization) of MEDICAL marijuana? *</p>
+              <p><input type="radio" name="ec152" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec152" value="Yes">Yes</p>
+              <p><input type="radio" name="ec152" value="No">No</p>
+              <p><input type="radio" name="ec152" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec152" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for the Federal LEGALIZATION (not decriminalization) of RECREATIONAL marijuana? *</p>
+              <p><input type="radio" name="ec153" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec153" value="Yes">Yes</p>
+              <p><input type="radio" name="ec153" value="No">No</p>
+              <p><input type="radio" name="ec153" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec153" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>If marijuana is legalized, will you fight to expunge records? *</p>
+              <p><input type="radio" name="ec154" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec154" value="Yes">Yes</p>
+              <p><input type="radio" name="ec154" value="No">No</p>
+              <p><input type="radio" name="ec154" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec154" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end what amounts to slave labor at prisons, where inmates are forced to work for pennies an hour producing goods for large corporations?</p>
+              <p><input type="radio" name="ec155" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec155" value="Yes">Yes</p>
+              <p><input type="radio" name="ec155" value="No">No</p>
+              <p><input type="radio" name="ec155" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec155" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to decriminalize all drug use?</p>
+              <p><input type="radio" name="ec156" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec156" value="Yes">Yes</p>
+              <p><input type="radio" name="ec156" value="No">No</p>
+              <p><input type="radio" name="ec156" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec156" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expunge the records of those convicted of drug use?</p>
+              <p><input type="radio" name="ec157" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec157" value="Yes">Yes</p>
+              <p><input type="radio" name="ec157" value="No">No</p>
+              <p><input type="radio" name="ec157" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec157" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Racial Justice</h2>
+              <br>
+              <br>
+              <p>Will you fight for Reparations? *</p>
+              <p><input type="radio" name="ec158" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec158" value="Yes">Yes</p>
+              <p><input type="radio" name="ec158" value="No">No</p>
+              <p><input type="radio" name="ec158" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec158" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support and pass legislation making lynching a federal hate crime?</p>
+              <p><input type="radio" name="ec159" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec159" value="Yes">Yes</p>
+              <p><input type="radio" name="ec159" value="No">No</p>
+              <p><input type="radio" name="ec159" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec159" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Ending the Military Industrial Complex</h2>
+              <br>
+               <br>
+               <p>Will you fight to Defund the Pentagon and End the Endless Wars? If yes, what percentage reduction would you fight for? (Enter under the "Other" box) *</p>
+              <p><input type="radio" name="ec160"  value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec160"  value="Yes">Yes</p>
+              <p><input type="radio" name="ec160"  value="No">No</p>
+              <p><input type="radio" name="ec160"  value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec160" value="Other">Other
+              <span><input  type="text" placeholder="Your Answer" name="ec309"></span>
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to ban the practice of no-bid government contracts?</p>
+              <p><input type="radio" name="ec161" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec161" value="Yes">Yes</p>
+              <p><input type="radio" name="ec161" value="No">No</p>
+              <p><input type="radio" name="ec161" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec161" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to end wars of aggression, preemptive wars and regime change?</p>
+              <p><input type="radio" name="ec162" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec162" value="Yes">Yes</p>
+              <p><input type="radio" name="ec162" value="No">No</p>
+              <p><input type="radio" name="ec162" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec162" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to return habeas corpus and due process?</p>
+              <p><input type="radio" name="ec163" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec163" value="Yes">Yes</p>
+              <p><input type="radio" name="ec163" value="No">No</p>
+              <p><input type="radio" name="ec163" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec163" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to stop invading sovereign airspace with drones?</p>
+              <p><input type="radio" name="ec164" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec164" value="Yes">Yes</p>
+              <p><input type="radio" name="ec164" value="No">No</p>
+              <p><input type="radio" name="ec164" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec164" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to ban the use of automated military weapons including automated drones?</p>
+              <p><input type="radio" name="ec165" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec165" value="Yes">Yes</p>
+              <p><input type="radio" name="ec165" value="No">No</p>
+              <p><input type="radio" name="ec165" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec165" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to end the complete lack of transparency and accountability at the Defense Department?</p>
+              <p><input type="radio" name="ec166" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec166" value="Yes">Yes</p>
+              <p><input type="radio" name="ec166" value="No">No</p>
+              <p><input type="radio" name="ec166" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec166" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to restore congressional authority over the Defense programs and the budget. Account for the trillions in missing funds?</p>
+              <p><input type="radio" name="ec167" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec167" value="Yes">Yes</p>
+              <p><input type="radio" name="ec167" value="No">No</p>
+              <p><input type="radio" name="ec167" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec167" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to enforce the War Powers Act and restore that authority to Congress?</p>
+              <p><input type="radio" name="ec168" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec168" value="Yes">Yes</p>
+              <p><input type="radio" name="ec168" value="No">No</p>
+              <p><input type="radio" name="ec168" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec168" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to require Congress to vote on a formal declaration of war before funding can be allocated?
+</p>
+              <p><input type="radio" name="ec169" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec169" value="Yes">Yes</p>
+              <p><input type="radio" name="ec169" value="No">No</p>
+              <p><input type="radio" name="ec169" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec169" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to repeal the 2001 Authorization for Use of Military Force, which the executive branch has treated as a blank check for endless war?
+</p>
+              <p><input type="radio" name="ec170" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec170" value="Yes">Yes</p>
+              <p><input type="radio" name="ec170" value="No">No</p>
+              <p><input type="radio" name="ec170" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec170" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+               <p>Will you fight to ban the use of overly-broad, ill-defined and indefinite Authorization of Use for Military Forces (AUMFs) that place no constraints on the executive branch’s ability to wage war?
+</p>
+              <p><input type="radio" name="ec171" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec171" value="Yes">Yes</p>
+              <p><input type="radio" name="ec171" value="No">No</p>
+              <p><input type="radio" name="ec171" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec171" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>International Diplomacy</h2>
+              <br>
+              <br>
+               <p>Will you fight to restore international goodwill, confidence and moral authority in the U.S. by ending world hunger and extreme poverty?</p>
+              <p><input type="radio" name="ec172" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec172" value="Yes">Yes</p>
+              <p><input type="radio" name="ec172" value="No">No</p>
+              <p><input type="radio" name="ec172" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec172" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to strengthen and enforce the U.N. Universal Declaration of Human Rights?</p>
+              <p><input type="radio" name="ec173" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec173" value="Yes">Yes</p>
+              <p><input type="radio" name="ec173" value="No">No</p>
+              <p><input type="radio" name="ec173" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec173" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to lead the international community in clean energy innovation and combating climate change?</p>
+              <p><input type="radio" name="ec174" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec174" value="Yes">Yes</p>
+              <p><input type="radio" name="ec174" value="No">No</p>
+              <p><input type="radio" name="ec174" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec174" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to close Guantanamo and return it to Cuba?</p>
+              <p><input type="radio" name="ec175" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec175" value="Yes">Yes</p>
+              <p><input type="radio" name="ec175" value="No">No</p>
+              <p><input type="radio" name="ec175" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec175" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to prosecute officials who committed torture in violation of the Geneva Convention?</p>
+              <p><input type="radio" name="ec176" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec176" value="Yes">Yes</p>
+              <p><input type="radio" name="ec176" value="No">No</p>
+              <p><input type="radio" name="ec176" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec176" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support a two-state solution that recognizes Palestine’s right to exist with self-determination and governance?</p>
+              <p><input type="radio" name="ec177" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec177" value="Yes">Yes</p>
+              <p><input type="radio" name="ec177" value="No">No</p>
+              <p><input type="radio" name="ec177" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec177" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to cut off military aid to countries that violate human rights and international law?</p>
+              <p><input type="radio" name="ec178" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec178" value="Yes">Yes</p>
+              <p><input type="radio" name="ec178" value="No">No</p>
+              <p><input type="radio" name="ec178" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec178" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to stop propping up unelected regimes abroad and meddling in foreign elections?
+</p>
+              <p><input type="radio" name="ec179" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec179" value="Yes">Yes</p>
+              <p><input type="radio" name="ec179" value="No">No</p>
+              <p><input type="radio" name="ec179" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec179" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to de-escalate tensions and proxy-wars with Russia and resume bilateral nuclear stockpile reductions?</p>
+              <p><input type="radio" name="ec180" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec180" value="Yes">Yes</p>
+              <p><input type="radio" name="ec180" value="No">No</p>
+              <p><input type="radio" name="ec180" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec180" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to join the global community in working towards a nuclear-free world?</p>
+              <p><input type="radio" name="ec181" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec181" value="Yes">Yes</p>
+              <p><input type="radio" name="ec181" value="No">No</p>
+              <p><input type="radio" name="ec181" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec181" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to stop the wars in the Middle East and North Africa that have destabilized countries such as Syria and Libya, destroying their infrastructure and forcing millions to leave their homes in desperation?</p>
+              <p><input type="radio" name="ec182" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec182" value="Yes">Yes</p>
+              <p><input type="radio" name="ec182" value="No">No</p>
+              <p><input type="radio" name="ec182" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec182" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end the drug war which exports cartel violence and corruption to Latin American countries, forcing many to flee to the U.S.?
+</p>
+              <p><input type="radio" name="ec183" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec183" value="Yes">Yes</p>
+              <p><input type="radio" name="ec183" value="No">No</p>
+              <p><input type="radio" name="ec183" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec183" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pursue diplomatic solutions with North Korea and Iran and halt efforts to destabilize Venezuela?
+</p>
+              <p><input type="radio" name="ec184" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec184" value="Yes">Yes</p>
+              <p><input type="radio" name="ec184" value="No">No</p>
+              <p><input type="radio" name="ec184" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec184" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to halt the arms race on autonomous weapons by negotiating an international treaty banning their development and use as we did with chemical and laser weapons?
+</p>
+              <p><input type="radio" name="ec185" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec185" value="Yes">Yes</p>
+              <p><input type="radio" name="ec185" value="No">No</p>
+              <p><input type="radio" name="ec185" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec185" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+             <h2>Trade</h2>
+             <br>
+             <br>
+              <p>Will you fight to reverse trade policies in agreements like NAFTA, CAFTA and PNTR with China that have outsourced millions of jobs and created a global race to the bottom in wages?</p>
+              <p><input type="radio" name="ec186" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec186" value="Yes">Yes</p>
+              <p><input type="radio" name="ec186" value="No">No</p>
+              <p><input type="radio" name="ec186" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec186" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reverse trade policies in agreements like NAFTA, CAFTA and PNTR with China that have outsourced millions of jobs and created a global race to the bottom in wages?</p>
+              <p><input type="radio" name="ec187" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec187" value="Yes">Yes</p>
+              <p><input type="radio" name="ec187" value="No">No</p>
+              <p><input type="radio" name="ec187" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec187" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to embrace fair trade and domestic policies that incentivize companies to keep good paying jobs in America?</p>
+              <p><input type="radio" name="ec188" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec188" value="Yes">Yes</p>
+              <p><input type="radio" name="ec188" value="No">No</p>
+              <p><input type="radio" name="ec188" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec188" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reverse the outsourcing of American jobs and renegotiate trade agreements that have proven disastrous to workers worldwide?</p>
+              <p><input type="radio" name="ec189" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec189" value="Yes">Yes</p>
+              <p><input type="radio" name="ec189" value="No">No</p>
+              <p><input type="radio" name="ec189" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec189" value="Other">Other
+              </p>
+               
+{{!-- 189 after direct 913 --}}
+               <br>
+              <br>
+              <h2>Human Rights</h2>
+              <br>
+              <br>
+              <p>Will you fight to make sure every human being is treated equally and equitably no matter who they are, how they identify or what religion they follow and fight for their rights in any and every societal situation? *</p>
+              <p><input type="radio" name="ec190" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec190" value="Yes">Yes</p>
+              <p><input type="radio" name="ec190" value="No">No</p>
+              <p><input type="radio" name="ec190" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec190" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Immigration</h2>
+              <br>
+              <br>
+              <p>Will you fight to abolish ICE? *</p>
+              <p><input type="radio" name="ec193" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec193" value="Yes">Yes</p>
+              <p><input type="radio" name="ec193" value="No">No</p>
+              <p><input type="radio" name="ec193" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec193" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reverse the criminalization of the 11 million undocumented immigrants in America and create a swift pathway to citizenship?</p>
+              <p><input type="radio" name="ec194" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec194" value="Yes">Yes</p>
+              <p><input type="radio" name="ec194" value="No">No</p>
+              <p><input type="radio" name="ec194" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec194" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pass the Dream Act and naturalize all undocumented immigrants who were brought to the U.S. as children?</p>
+              <p><input type="radio" name="ec195" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec195" value="Yes">Yes</p>
+              <p><input type="radio" name="ec195" value="No">No</p>
+              <p><input type="radio" name="ec195" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec195" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to expand DACA and DAPA?</p>
+              <p><input type="radio" name="ec196" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec196" value="Yes">Yes</p>
+              <p><input type="radio" name="ec196" value="No">No</p>
+              <p><input type="radio" name="ec196" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec196" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ensure that Medicare for all extends to undocumented immigrants and allow them to purchase health insurance through the ACA in the meantime?</p>
+              <p><input type="radio" name="ec197" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec197" value="Yes">Yes</p>
+              <p><input type="radio" name="ec197" value="No">No</p>
+              <p><input type="radio" name="ec197" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec197" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to dismantle inhumane deportation programs and detention centers?</p>
+              <p><input type="radio" name="ec198" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec198" value="Yes">Yes</p>
+              <p><input type="radio" name="ec198" value="No">No</p>
+              <p><input type="radio" name="ec198" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec198" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to protect refugees who come to America and their right to return from trips abroad?</p>
+              <p><input type="radio" name="ec199" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec199" value="Yes">Yes</p>
+              <p><input type="radio" name="ec199" value="No">No</p>
+              <p><input type="radio" name="ec199" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec199" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to return to a “revolving door/circular flow” policy with regards to Mexico border immigration. Where temporary workers are free to enter the country with the knowledge they can easily and freely return home?</p>
+              <p><input type="radio" name="ec200" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec200" value="Yes">Yes</p>
+              <p><input type="radio" name="ec200" value="No">No</p>
+              <p><input type="radio" name="ec200" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec200" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Disability Rights</h2>
+              <br>
+              <br>
+              <p>Will you fight to end sub-minimum wage for workers with disabilities while guaranteeing jobs and living wages in the community for all?</p>
+              <p><input type="radio" name="ec201" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec201" value="Yes">Yes</p>
+              <p><input type="radio" name="ec201" value="No">No</p>
+              <p><input type="radio" name="ec201" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec201" value="Other">Other
+              <span><input type="text" placeholder="Your Answer" name="ec201"></span>
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pass the Disability Integration Act, to provide seniors and people with disabilities home and community-based services as an alternative to institutionalization, ensuring access to long term services and support?</p>
+              <p><input type="radio" name="ec202" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec202" value="Yes">Yes</p>
+              <p><input type="radio" name="ec202" value="No">No</p>
+              <p><input type="radio" name="ec202" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec202" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to improve and enforce the Americans with Disabilities Act?</p>
+              <p><input type="radio" name="ec203" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec203" value="Yes">Yes</p>
+              <p><input type="radio" name="ec203" value="No">No</p>
+              <p><input type="radio" name="ec203" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec203" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end the widespread incarceration of people with mental disabilities and enforce the Supreme Court’s Olmstead decision to provide people with mental disabilities community-based support?</p>
+              <p><input type="radio" name="ec204" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec204" value="Yes">Yes</p>
+              <p><input type="radio" name="ec204" value="No">No</p>
+              <p><input type="radio" name="ec204" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec204" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reject the privatization of disability and aging services?</p>
+              <p><input type="radio" name="ec205" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec205" value="Yes">Yes</p>
+              <p><input type="radio" name="ec205" value="No">No</p>
+              <p><input type="radio" name="ec205" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec205" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Women’s Right</h2>
+              <br>
+              <br>
+              <p>Will you fight to fund non-governmental organizations and initiatives that assist with parent's health and family planning?</p>
+              <p><input type="radio" name="ec206" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec206" value="Yes">Yes</p>
+              <p><input type="radio" name="ec206" value="No">No</p>
+              <p><input type="radio" name="ec206" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec206" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to protect access to contraception and the availability of a safe and legal abortion?</p>
+              <p><input type="radio" name="ec207" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec207" value="Yes">Yes</p>
+              <p><input type="radio" name="ec207" value="No">No</p>
+              <p><input type="radio" name="ec207" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec207" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to end the practice of genital mutilation, underage forced marriage, and the abuse of sex workers?</p>
+              <p><input type="radio" name="ec208" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec208" value="Yes">Yes</p>
+              <p><input type="radio" name="ec208" value="No">No</p>
+              <p><input type="radio" name="ec208" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec208" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight against any enforcement that does not take into account the dire circumstances under which many women make survival choices?</p>
+              <p><input type="radio" name="ec209" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec209" value="Yes">Yes</p>
+              <p><input type="radio" name="ec209" value="No">No</p>
+              <p><input type="radio" name="ec209" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec209" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight for the passage of the Equal Rights Amendment and an increase in Women Infants and Children (WIC) funding?</p>
+              <p><input type="radio" name="ec210" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec210" value="Yes">Yes</p>
+              <p><input type="radio" name="ec210" value="No">No</p>
+              <p><input type="radio" name="ec210" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec210" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to make the U.S. a world leader in women’s rights?</p>
+              <p><input type="radio" name="ec211" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec211" value="Yes">Yes</p>
+              <p><input type="radio" name="ec211" value="No">No</p>
+              <p><input type="radio" name="ec211" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec211" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support the Paycheck Fairness Act to end wage discrimination based on gender?</p>
+              <p><input type="radio" name="ec212" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec212" value="Yes">Yes</p>
+              <p><input type="radio" name="ec212" value="No">No</p>
+              <p><input type="radio" name="ec212" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec212" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>LGBTQIA+ Rights</h2>
+              <br>
+              <br>
+              <p>Will you fight to abolish segregation by sexual orientation?</p>
+              <p><input type="radio" name="ec213" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec213" value="Yes">Yes</p>
+              <p><input type="radio" name="ec213" value="No">No</p>
+              <p><input type="radio" name="ec213" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec213" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to defend against the rollback of achieved rights, including spousal benefits, and back the strengthening of laws against hate propaganda and hate crimes?</p>
+              <p><input type="radio" name="ec214" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec214" value="Yes">Yes</p>
+              <p><input type="radio" name="ec214" value="No">No</p>
+              <p><input type="radio" name="ec214" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec214" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support public education and legal action to ensure that the Supreme Court’s 2015 marriage equality decision is enforced and not eroded by measures designed to discriminate against gay and lesbian couples and their children?</p>
+              <p><input type="radio" name="ec215" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec215" value="Yes">Yes</p>
+              <p><input type="radio" name="ec215" value="No">No</p>
+              <p><input type="radio" name="ec215" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec215" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Indigenous Rights</h2>
+              <br>
+              <br>
+              <p>Will you fight to support Native rights to challenge and reject the domination of colonial nation-states?</p>
+              <p><input type="radio" name="ec216" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec216" value="Yes">Yes</p>
+              <p><input type="radio" name="ec216" value="No">No</p>
+              <p><input type="radio" name="ec216" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec216" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to recognize the sovereignty of Native tribal governments and call upon the U.S. government to deal in good faith and honor treaty obligations?</p>
+              <p><input type="radio" name="ec217" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec217" value="Yes">Yes</p>
+              <p><input type="radio" name="ec217" value="No">No</p>
+              <p><input type="radio" name="ec217" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec217" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to uphold the rights of Indigenous people to defend and protect their lives, natural resources, sacred sites and culture?</p>
+              <p><input type="radio" name="ec218" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec218" value="Yes">Yes</p>
+              <p><input type="radio" name="ec218" value="No">No</p>
+              <p><input type="radio" name="ec218" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec218" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you seek to follow and learn from the example of Native people who are consistently at the front lines of resistance for protecting water, air and land?</p>
+              <p><input type="radio" name="ec219" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec219" value="Yes">Yes</p>
+              <p><input type="radio" name="ec219" value="No">No</p>
+              <p><input type="radio" name="ec219" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec219" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to support the rights of Native people to defend their freedom and their lives?</p>
+              <p><input type="radio" name="ec220" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec220" value="Yes">Yes</p>
+              <p><input type="radio" name="ec220" value="No">No</p>
+              <p><input type="radio" name="ec220" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec220" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Veteran Aid</h2>
+              <br>
+              <br>
+              <p>Will you fight to reduce veteran homelessness to zero with decent housing and jobs?</p>
+              <p><input type="radio" name="ec221" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec221" value="Yes">Yes</p>
+              <p><input type="radio" name="ec221" value="No">No</p>
+              <p><input type="radio" name="ec221" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec221" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ensure that all returning service members are fully aware of all benefits to which they are entitled. Give assistance to find out where and how to make use of them?</p>
+              <p><input type="radio" name="ec222" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec222" value="Yes">Yes</p>
+              <p><input type="radio" name="ec222" value="No">No</p>
+              <p><input type="radio" name="ec222" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec222" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to remove the chain of command for investigating and prosecuting claims of rape and sexual harassment in the military?</p>
+              <p><input type="radio" name="ec223" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec223" value="Yes">Yes</p>
+              <p><input type="radio" name="ec223" value="No">No</p>
+              <p><input type="radio" name="ec223" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec223" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to change the status of veterans who were discharged due solely to their sexual orientation from involuntary to voluntary?</p>
+              <p><input type="radio" name="ec224" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec224" value="Yes">Yes</p>
+              <p><input type="radio" name="ec224" value="No">No</p>
+              <p><input type="radio" name="ec224" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec224" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to pass federal legislation mandating that no undocumented veteran can be deported after serving our country?</p>
+              <p><input type="radio" name="ec225" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec225" value="Yes">Yes</p>
+              <p><input type="radio" name="ec225" value="No">No</p>
+              <p><input type="radio" name="ec225" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec225" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require that the Dept. of Veterans Affairs provide comprehensive healthcare and mental healthcare to all veterans and their families, including those with post traumatic stress disorder and traumatic brain injury?</p>
+              <p><input type="radio" name="ec226" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec226" value="Yes">Yes</p>
+              <p><input type="radio" name="ec226" value="No">No</p>
+              <p><input type="radio" name="ec226" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec226" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to provide assistance to all service people exposed to Agent Orange and other toxins including contaminated soils?</p>
+              <p><input type="radio" name="ec227" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec227" value="Yes">Yes</p>
+              <p><input type="radio" name="ec227" value="No">No</p>
+              <p><input type="radio" name="ec227" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec227" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to reduce backlog claims at the Veterans Administration?</p>
+              <p><input type="radio" name="ec228" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec228" value="Yes">Yes</p>
+              <p><input type="radio" name="ec228" value="No">No</p>
+              <p><input type="radio" name="ec228" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec228" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to ensure that all leases and use of VA facilities solely benefit veterans and their families?</p>
+              <p><input type="radio" name="ec229" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec229" value="Yes">Yes</p>
+              <p><input type="radio" name="ec229" value="No">No</p>
+              <p><input type="radio" name="ec229" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec229" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to establish a complete range of medical, housing, right of work return, free college tuition and post-service employment assistance?</p>
+              <p><input type="radio" name="ec230" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec230" value="Yes">Yes</p>
+              <p><input type="radio" name="ec230" value="No">No</p>
+              <p><input type="radio" name="ec230" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec230" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+             <h2>Bill of Rights</h2>
+             <br>
+             <br>
+              <p>Will you fight to affirm the right to free speech and free assembly?</p>
+              <p><input type="radio" name="ec231" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec231" value="Yes">Yes</p>
+              <p><input type="radio" name="ec231" value="No">No</p>
+              <p><input type="radio" name="ec231" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec231" value="Other">Other
+              </p>
+                        
+
+               <br>
+              <br>
+              <p>Will you fight to restore the fairness doctrine and equal time rule in media coverage of politics?</p>
+              <p><input type="radio" name="ec232" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec232" value="Yes">Yes</p>
+              <p><input type="radio" name="ec232" value="No">No</p>
+              <p><input type="radio" name="ec232" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec232" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to strengthen protections and rewards for government and corporate whistleblowers, and increase penalties for those who conceal government crimes and negligence?</p>
+              <p><input type="radio" name="ec233" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec233" value="Yes">Yes</p>
+              <p><input type="radio" name="ec233" value="No">No</p>
+              <p><input type="radio" name="ec233" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec233" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to protect the Freedom of Information Act and mandate a faster government response rate?</p>
+              <p><input type="radio" name="ec234" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec234" value="Yes">Yes</p>
+              <p><input type="radio" name="ec234" value="No">No</p>
+              <p><input type="radio" name="ec234" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec234" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Second Amendment</h2>
+              <br>
+              <br>
+              <p>Will you fight to ban assault rifles, armor piercing rounds, bump stocks, high capacity magazines, and other guns that are only and just specifically for war and killing as many humans as possible quickly?</p>
+              <p><input type="radio" name="ec235" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec235" value="Yes">Yes</p>
+              <p><input type="radio" name="ec235" value="No">No</p>
+              <p><input type="radio" name="ec235" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec235" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to initiate a federal buy-back program for these weapons?</p>
+              <p><input type="radio" name="ec236" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec236" value="Yes">Yes</p>
+              <p><input type="radio" name="ec236" value="No">No</p>
+              <p><input type="radio" name="ec236" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec236" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to institute universal background checks?</p>
+              <p><input type="radio" name="ec237" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec237" value="Yes">Yes</p>
+              <p><input type="radio" name="ec237" value="No">No</p>
+              <p><input type="radio" name="ec237" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec237" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to prevent the accumulation of private arsenals and close the gun show loophole, which allows the private sale of firearms circumventing background checks?</p>
+              <p><input type="radio" name="ec238" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec238" value="Yes">Yes</p>
+              <p><input type="radio" name="ec238" value="No">No</p>
+              <p><input type="radio" name="ec238" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec238" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to require waiting periods to get firearms and allow hospitals to collect statistics on gun violence?</p>
+              <p><input type="radio" name="ec239" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec239" value="Yes">Yes</p>
+              <p><input type="radio" name="ec239" value="No">No</p>
+              <p><input type="radio" name="ec239" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec239" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Fourth Amendment</h2>
+              <br>
+              <br>
+              <p>Will you fight to re-assert the human right to privacy and the Fourth Amendment?</p>
+              <p><input type="radio" name="ec240" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec240" value="Yes">Yes</p>
+              <p><input type="radio" name="ec240" value="No">No</p>
+              <p><input type="radio" name="ec240" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec240" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to repeal the Patriot Act and abolish mass surveillance?</p>
+              <p><input type="radio" name="ec241" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec241" value="Yes">Yes</p>
+              <p><input type="radio" name="ec241" value="No">No</p>
+              <p><input type="radio" name="ec241" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec241" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <h2>Miscellaneous</h2>
+              <br>
+              <br>
+              <p>Will you fight to protect net neutrality?</p>
+              <p><input type="radio" name="ec242" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec242" value="Yes">Yes</p>
+              <p><input type="radio" name="ec242" value="No">No</p>
+              <p><input type="radio" name="ec242" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec242" value="Other">Other
+              </p>
+               
+
+               <br>
+              <br>
+              <p>Will you fight to abolish daylight savings</p>
+              <p><input type="radio" name="ec243" value="Yes & it's Priority">Yes & it's Priority</p>
+              <p><input type="radio" name="ec243" value="Yes">Yes</p>
+              <p><input type="radio" name="ec243" value="No">No</p>
+              <p><input type="radio" name="ec243" value="Abstain">Abstain</p>
+              <p><input type="radio" name="ec243" value="Other">Other
+              </p>
+               
+{{!-- calc part over --}}
+               <br>
+              <br>
+               <h2>Character</h2>
+               <br>
+               <br>
+               <p>So it looks like all you fine lads, lasses, and lenbies made it past Scylla and Charybdis, and Policy all the way to the Character section! Well done! The Character section is designed to ask you both Closed and Open Ended philosophical questions to get a better judge of who you are and where you're coming from. Make it through this and you've successfully evaded a trip to Davy Jones' Locker!</p>
+               <br>
+               <br>
+               <h2>Close-Ended/ Short Answer (Should You Choose To Elaborate, Which Is Perfectly Acceptable)</h2>
+               <br>
+               <br>
+               <p>Without religion would people become more corrupt, less corrupt, or be equally morally corrupt?</p>
+               <input type="text" name="ec244" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Are intentions or outcomes more important when judging whether actions are moral?</p>
+               <input type="text" name="ec245" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Are people ethically obligated to improve themselves?</p>
+               <input type="text" name="ec246" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Do all people have equal value regardless of their actions or is a person’s value based on their actions?</p>
+               <input type="text" name="ec247" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Is it just and right to deny entry to a country when doing so probably means death for an immigrant and their family?</p>
+               <input type="text" name="ec248" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Is poverty in society inevitable?</p>
+               <input type="text" name="ec249" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What fictional character(s): TV/movie, storybook, comic or otherwise resonates with you the most?</p>
+               <input type="text" name="ec250" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What are your Top 3 favorite Pixar movies?</p>
+               <input type="text" name="ec251" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If you were an animal, what animal would you be?</p>
+               <input type="text" name="ec252" placeholder="YourValue">
+               <br>
+               <br>
+               <p>You’re President. You can pass (or repeal) ONE piece of legislation no strings attached. Pretend all bureaucracy doesn’t exist or apply. What are you using your “Golden Ticket” on?</p>
+               <input type="text" name="ec253" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Is it more important to help yourself, help your family, help your society, or help the world? You can only pick one.</p>
+               <input type="text" name="ec254" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If you could press a button and receive a million dollars, but one stranger would die, would you press the button? And if so, how many times</p>
+               <input type="text" name="ec255" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Do people in wealthier countries have a moral obligation to help those in poorer countries?</p>
+               <input type="text" name="ec256" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Would a government run with algorithms, A.I., and statistics be better or worse than the government we have now?</p>
+               <input type="text" name="ec257" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Could societies exist without a way to transfer value (i.e. without money or a barter system)?</p>
+               <input type="text" name="ec258" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Considering that the technology exists to enable a real democracy, would a true democracy (every single person can vote on every single legislation) be advantageous or detrimental?</p>
+               <input type="text" name="ec259" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Should tax payers have the option to explicitly say what they don’t want their tax dollars spent on?</p>
+               <input type="text" name="ec260" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Can a society exist without laws?</p>
+               <input type="text" name="ec261" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Is some degree of censorship necessary?</p>
+               <input type="text" name="ec262" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Has the invention of the atomic bomb made the world a more peaceful place?</p>
+               <input type="text" name="ec263" placeholder="YourValue">
+               <br>
+               <br>
+               <h2>Open-Ended</h2>
+               <br>
+               <br>
+               <p>What is your vision for America and for your district? How will your policies directly impact the people? *</p>
+               <input type="text" name="ec264" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Some people believe that if life has no purpose, then there is no reason for living. While others think that if life has no purpose, that frees a person to find/create and follow their own personal purpose. Which is a more valid point of view or are they both equally valid?</p>
+               <input type="text" name="ec265" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If and when you join government you’ll be working with career politicians on both sides of the aisle. How do you intend to get support for your legislation? Are you willing to make concessions? To what extent? Is there anything you won’t concede on? What policies are your priority/have to pass with zero concessions?</p>
+               <input type="text" name="ec266" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What do you have trouble forgiving yourself for?</p>
+               <input type="text" name="ec267" placeholder="YourValue">
+               <br>
+               <br>
+               <p>When, if ever, is taking a human life justified?</p>
+               <input type="text" name="ec268" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Should you be elected, are you willing to make concessions? When? To what extent?</p>
+               <input type="text" name="ec269" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Should there be limitations on the right to free speech? If yes, what should they be?</p>
+               <input type="text" name="ec270" placeholder="YourValue">
+               <br>
+               <br>
+               <p>A mother steals a loaf of bread to feed her children, what should her punishment be, if any?</p>
+               <input type="text" name="ec271" placeholder="YourValue">
+               <br>
+               <br>
+               <p>You see a spider lurking in the corner of your shower and it’s been there for days, trapped. And every time you turn the water on, it tries to run for its life to escape, but it can’t get out. So what do you do?</p>
+               <input type="text" name="ec272" placeholder="YourValue">
+               <br>
+               <br>
+               <p>How do you think we should handle people who rape children?</p>
+               <input type="text" name="ec273" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Have you ever worked a food service, retail, or customer service job? How good a memory do you have of that job and will it influence how you do your job in Congress at all?</p>
+               <input type="text" name="ec274" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Does hardship make a person stronger? If so, under what conditions and at what point is it too much hardship? If not, what makes a person stronger?</p>
+               <input type="text" name="ec275" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What is the most important goal every person should have?</p>
+               <input type="text" name="ec276" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What are you capable of achieving?</p>
+               <input type="text" name="ec277" placeholder="YourValue">
+               <br>
+               <br>
+               <p>By what standards do you judge yourself?</p>
+               <input type="text" name="ec278" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What two questions would you ask to get the most information about who a person truly is?</p>
+               <input type="text" name="ec279" placeholder="YourValue">
+               <br>
+               <br>
+               <p>With no laws or rules to influence your behavior, how do you think you would behave?</p>
+               <input type="text" name="ec280" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What is the most important right our government allows for?</p>
+               <input type="text" name="ec281" placeholder="YourValue">
+               <br>
+               <br>
+               <p>How should we measure the productivity of a society?</p>
+               <input type="text" name="ec282" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What causes the most harm in the world, but is completely avoidable?</p>
+               <input type="text" name="ec283" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What is the biggest threat to the social contract in our country?</p>
+               <input type="text" name="ec284" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What rights should every human have? Do those rights change based on age, race, identity?</p>
+               <input type="text" name="ec285" placeholder="YourValue">
+               <br>
+               <br>
+               <p>At what point is overthrowing a government ethical, considering all the violence a revolution usually entails?</p>
+               <input type="text" name="ec286" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Should euthanasia be legal on animals? Humans who actively consent? Why or why not? Would you make any exceptions?</p>
+               <input type="text" name="ec287" placeholder="YourValue">
+               <br>
+               <br>
+               <p>How far should governments go to prevent its citizens from causing harm to themselves?</p>
+               <input type="text" name="ec288" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If scientists could accurately predict who was more likely to commit crimes, what should society do with that information?</p>
+               <input type="text" name="ec289" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If you could start a country from scratch, what would it be like?</p>
+               <input type="text" name="ec290" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What should the role of a government be, what boundaries and limitations should it have?</p>
+               <input type="text" name="ec291" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What would happen if a maximum income of $500,000 a year was implemented?</p>
+               <input type="text" name="ec292" placeholder="YourValue">
+               <br>
+               <br>
+               <p>What would happen to a society in which no one had to work, and everyone was provided enough food/water/shelter/healthcare for free?</p>
+               <input type="text" name="ec293" placeholder="YourValue">
+               <br>
+               <br>
+               <p>If all humans want the same basic things, why is there so much violence and strife between people?</p>
+               <input type="text" name="ec294" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Under our government are there any rights that you have but shouldn’t? How about rights you don’t have but should (that have not been specified within this survey)?</p>
+               <input type="text" name="ec295" placeholder="YourValue">
+               <br>
+               <br>
+               <p>Has social media been a net positive or a net negative for our society? Why?</p>
+               <input type="text" name="ec296" placeholder="YourValue">
+               <br>
+               <br>
+               <p>How much privacy are you willing to sacrifice for safety?</p>
+               <input type="text" name="ec297" placeholder="YourValue">
+               <br>
+               <br>
+               <p>For the above question: “What two questions would you ask to get the most information about who a person truly is?” Answer your own two questions</p>
+               <input type="text" name="ec298" placeholder="YourValue">
+               <br>
+               <br>
+               <h2>One Question To Rule Them All</h2>
+               <br>
+               <br>
+               <p>So you've made it this far. The sea can be a cruel significant other, but we're proud to see how far you've come. It was just like approximately 30min to an hour ago that you boarded our ship for us to see if you had what it took. Now, you are in the endgame with one last question for all the marbles. Let's see what ya got left in yee. (I also feel it necessary to note that turn-around may vary as answers are reviewed on a first come, first serve basis and, considering how sporadic submissions may be, this could be reflected in a bit longer of a wait time. Just wanted to let you know as a courtesy. YARRRR!) On to the final question asked by Poseidon himself!</p>
+                <br>
+                <br>
+                <p>Will you fight to the death for free tacos, vegetarian/vegan or otherwise, on EVERY Taco Tuesday?!?! *</p>
+               <input type="text" name="ec299" placeholder="YourValue">
+               <br>
+               <br>
+
+             <input type="submit" value="SUBMIT" class="btn btn-primary"onclick="check()" >
+            </form>
+
+
+
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

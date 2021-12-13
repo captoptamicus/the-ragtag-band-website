@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="shortcut icon" href="images/logo2.jpeg" type="image/x-icon">
+    <style>
+      th,  td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+td{
+  color: red;
+}
+
+body{
+    background-image: url('../images/p99.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    </style>
+
+    <title>Public View</title>
+</head>
+<body>
+   <div class="container">
+       <h1 class="text-center bg-warning">USER FORM SUBMISSION ANSWER SHEET</h1>
+       <div class="row">
+           <div class="col-lg-8 col-12">
+           <table style="width:100%" class="font-weight-bold">
+  <tr>
+    <th>Email: </th>
+       {{#each rss}}
+    <td>{{this.Email}}</td>
+     {{/each}}
+  </tr>
+  <tr>
+    <th>Name: </th>
+    {{#each rss}}
+    <td>{{this.Name}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What state are you running in: </th>
+    {{#each rss}}
+    <td>{{this.State}}</td>
+    {{/each    }}
+  </tr>
+    <tr>
+    <th>What year do you plan to run:</th>
+     {{#each rss}}
+    <td>{{this.Year}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What is the exact date of your election? (If it is TBD, please say that and let us know once this information is available: </th>
+     {{#each rss}}
+    <td>{{this.date_of_election}}</td>
+{{/each}}
+  </tr>
+  <tr>
+    <th>Level of Election : </th>
+     {{#each rss}}
+    <td>{{this.Level}}</td>
+     {{/each}}
+  </tr>
+    <tr>
+    <th>Position: </th>
+     {{#each rss}}
+    <td>{{this.Position}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Give a brief biography of yourself: </th>
+     {{#each rss}}
+    <td>{{this.candidiate_biography}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Are you the incumbent in your race: </th>
+     {{#each rss}}
+    <td>{{this.ans1}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Have you run for this seat before: </th>
+     {{#each rss}}
+    <td>{{this.ans2}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>How do you identify politically (i.e. Democrat, progressive, socialist, communist, etc.): </th>
+     {{#each rss}}
+    <td>{{this.Political_identity}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Has The Ragtag Band endorsed you in another election: </th>
+     {{#each rss}}
+    <td>{{this.ans3}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Have you currently been endorsed by any of the following groups? (If you ran in a previous election and any of these endorsed you, please check "Other" and fill in at the bottom AND if there are other prominent groups not listed here, please put them and the election in which they endorsed as well): </th>
+    {{#each rss}}
+    <td>{{this.endrose_group}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Provide a link to your campaign website: </th>
+     {{#each rss}}
+    <td>{{this.campaign_website}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What is your Twitter @: </th>
+     {{#each rss}}
+    <td>{{this.Twitter}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to abolish the Electoral College: </th>
+     {{#each rss}}
+    <td>{{this.ans4}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to implement Ranked Choice Voting (or some other system where the Popular Vote takes precedent, and vote splitting is not incurred, such as Star)? Please specify under "Other" if necessary: </th>
+    {{#each rss}}
+    <td>{{this.ans5}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for a national ballot initiative power that gives Americans the power to bypass Congress and put laws on the books directly: </th>
+     {{#each rss}}
+    <td>{{this.ans6}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to lower the voting age? If yes, what age? (Enter under "Other"): </th>
+     {{#each rss}}
+    <td>{{this.ans7}}</td>
+    <td>{{this.lower_voting_age}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to switch from single-member districts to multi-member districts? </th>
+     {{#each rss}}
+    <td>{{this.ans8}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to enact automatic voter registration?: </th>
+     {{#each rss}}
+    <td>{{this.ans9}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to make election day a national holiday and allow early voting by mail?: </th>
+     {{#each rss}}
+    <td>{{this.ans10}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish gerrymandering and use independent commissions to draw districts to favor competitiveness?: </th>
+    {{#each rss}}
+    <td>{{this.ans11}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to lower ballot access requirements for independent candidates and third parties and equalize the requirements for all parties?: </th>
+   {{#each rss}}
+    <td>{{this.ans12}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to return the management of presidential debates to a nonpartisan independent commission, invite all candidates, and make it easier to get on enough state ballots to be able to win the presidency?: </th>
+   {{#each rss}}
+  <td>{{this.ans13}}</td>
+  {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to switch from our patchwork of state and local election and ballot access rules to national standards that promote access, fairness and competitiveness?: </th>
+     {{#each rss}}
+    <td>{{this.ans14}}</td>
+{{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to restore integrity and trust in our democracy by switching to hand-counted paper ballots with routine post-election audits?: </th>
+     {{#each rss}}
+    <td>{{this.ans15}}</td>
+  {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to mandate the retention of paper ballots and scanned ballot images?: </th>
+     {{#each rss}}
+    <td>{{this.ans16}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require that all election hardware and software be open source and secure? (editor- there should be no election software and hardware in use for elections. - paper ballots, hand counted: </th>
+     {{#each rss}}
+    <td>{{this.ans17}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to hold election officials and processes accountable?: </th>
+     {{#each rss}}
+    <td>{{this.ans18}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to ensure that all precincts are equipped with ample polling stations to handle capacity without long lines?: </th>
+     {{#each rss}}
+    <td>{{this.ans19}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end voter ID provisions, often used to suppress the vote in communities of color?: </th>
+     {{#each rss}}
+    <td>{{this.ans20}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to halt voter roll purges and interstate cross-check programs, which exist to combat the statistically non-existent issue of voter fraud and end up disenfranchising thousands of honest voters?: </th>
+    {{#each rss}}
+    <td>{{this.ans21}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to implement a systematic exit polling system to monitor the vote according to U.N. guidelines?: </th>
+    {{#each rss}}
+    <td>{{this.ans22}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to implement a systematic exit polling system to monitor the vote according to U.N. guidelines?: </th>
+    {{#each rss}}
+    <td>{{this.ans23}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to enact congressional term limits? </th>
+     {{#each rss}}
+    <td>{{this.ans24}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to restore the right to vote to those currently as well as formerly incarcerated?: </th>
+     {{#each rss}}
+    <td>{{this.ans25}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to give Washington DC and Puerto Rico statehood?: </th>
+     {{#each rss}}
+    <td>{{this.ans28}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to put an end to discriminatory laws and the purging of minority-community names from voting rolls by restoring the Voting Rights Act?: </th>
+    {{#each rss}}
+    <td>{{this.ans26}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to abolish the Electoral College? *Will you fight to reform the Senate to make it more democratic?: </th>
+    {{#each rss}}
+    <td>{{this.ans28}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to make Supreme Court seats an elected position?: </th>
+     {{#each rss}}
+    <td>{{this.ans29}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you would like to provide any other feedback on this section, you may do so here: </th>
+     {{#each rss}}
+    <td>{{this.feedback_of_candidiate}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Scenario: It is clear just about every representative in office bows to The Establishment eventually and, so, our voting system must evolve. What do we do to get to the point of being able to abolish the Electoral College? There is a movement in place to create a National Popular Vote Interstate Compact and 15 states have already signed up. However, simply using a Popular Vote method would not eliminate any fear of vote-splitting. It is known that the Ranked Choice Voting method has gained major traction nationwide at the state and local levels, and it is believed that only RCV has a federal plan in the works to create a National Ranked Choice Voting Interstate Compact to break the duopoly and eliminate some of our current issues. With this being said, it is also clear RCV is not without its flaws. Is RCV/NRCV your preferred alternative to the current First-Past-The-Post system? If it is not, would you still be willing to use the groundswell in place that has been built around RCV to create and establish NRCV, which can then be used as a stepping stone for progressively better voting systems once better candidates are elected and not beholden to The Establishment?: </th>
+     {{#each rss}}
+    <td>{{this.ans299}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you take Corporate/Corporate PAC money?: </th>
+     {{#each rss}}
+    <td>{{this.ans30}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you take money from Super PACs?: </th>
+     {{#each rss}}
+    <td>{{this.ans31}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you take money from PACs? (Please use the box under "Other" if you want to elaborate): </th>
+     {{#each rss}}
+    <td>{{this.ans32}}</td>
+    <td>{{this.money_from_pac}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban super PACs, independent expenditures and dark money, shutting down unlimited and nontransparent outside spending?: </th>
+   {{#each rss}}
+    <td>{{this.ans33}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for publicly funded elections?: </th>
+     {{#each rss}}
+    <td>{{this.ans34}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to close the revolving door between Washington and Wall Street, whereby corporations reward politicians for doing their bidding with cushy jobs and high salaries once they leave office?: </th>
+    {{#each rss}}
+    <td>{{this.ans35}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to prevent corporate executives from holding elected office or being appointed to regulatory positions, where they presently oversee the industries they just departed and collect big bonuses for regulating favorably?: </th>
+     {{#each rss}}
+    <td>{{this.ans36}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban bundling and switch to the full public funding of our elections?: </th>
+     {{#each rss}}
+    <td>{{this.ans37}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reverse the Citizens United decision that flooded politics with big money?: </th>
+     {{#each rss}}
+    <td>{{this.ans38}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you co-sponsor the For the People Act (HR 1 & SB 1): </th>
+     {{#each rss}}
+    <td>{{this.ans39}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban lobbyists from making contributions to parties, politicians, their staff, and their families?: </th>
+     {{#each rss}}
+    <td>{{this.ans40}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to strengthen the definition of a lobbyist and eliminate other lobbyist loopholes?: </th>
+     {{#each rss}}
+    <td>{{this.ans41}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to prohibit politicians from fundraising during working hours?: </th>
+     {{#each rss}}
+    <td>{{this.ans42}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for a single payer system that covers prenatal, mental, vision, dental, preventive care, prescription drugs and all other medical needs? (Such as Medicare for All, assuming the legislation included the above).: </th>
+    {{#each rss}}
+    <td>{{this.ans43}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to include women’s hygiene products under Medicare for All?:</th>
+   {{#each rss}}
+    <td>{{this.ans44}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to lower drug prices?: </th>
+     {{#each rss}}
+    <td>{{this.ans45}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to expand Medicaid/Medicare?: </th>
+     {{#each rss}}
+    <td>{{this.ans46}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to lower the age of Medicare?: </th>
+     {{#each rss}}
+    <td>{{this.ans47}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to maintain coverage for pre-existing conditions?:</th>
+     {{#each rss}}
+    <td>{{this.ans48}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for an “opt-out” instead of the current “opt-in” organ donation system?: </th>
+     {{#each rss}}
+    <td>{{this.ans49}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to expand Social Security benefits and increase cost-of-living-adjustments to keep up with rising medical and prescription drug costs?: </th>
+     {{#each rss}}
+    <td>{{this.ans50}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to enact a Green New Deal, putting millions of Americans to work in good paying jobs that repair our crumbling roads, bridges, airports, dams, harbors and waterways. Modernizing the electrical grid for a renewable energy future?: </th>
+    {{#each rss}}
+    <td>{{this.ans51}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to enforce the Clean Water Act and strengthen laws meant to safeguard our drinking water?: </th>
+    {{#each rss}}
+    <td>{{this.ans52}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to decentralize our energy system with renewable technologies like rooftop solar, wind and geothermal to satisfy energy needs on the local and building level?: </th>
+     {{#each rss}}
+    <td>{{this.ans53}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to promote energy-efficient building codes, net metering and ambitious renewable portfolio standards?: </th>
+    {{#each rss}}
+    <td>{{this.ans54}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to make all new energy capacity clean and renewable, ending coal, oil, gas and nuclear developments?: </th>
+   {{#each rss}}
+    <td>{{this.ans55}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to replace fossil fuel subsidies with investments in renewable energy and use a carbon tax to incentivize the adoption of green energy?: </th>
+    {{#each rss}}
+    <td>{{this.ans56}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to join other developed countries in accelerating the transition from internal combustion to electric vehicles?: </th>
+     {{#each rss}}
+    <td>{{this.ans57}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban domestic oil drilling and fracking, which releases more greenhouse gases than coal due to its methane content?: </th>
+     {{#each rss}}
+    <td>{{this.ans58}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reduce deforestation and desertification?: </th>
+     {{#each rss}}
+    <td>{{this.ans59}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to raise clean air and clean water standards to save thousands of lives and hundreds of billions of dollars in annual medical costs?: </th>
+    {{#each rss}}
+    <td>{{this.ans60}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to preserve public lands and prevent resource exploitation in national parks such as the Arctic National Wildlife Refuge?: </th>
+    {{#each rss}}
+    <td>{{this.ans61}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to protect the health of neighborhoods of color by establishing and enforcing strict environmental laws?: </th>
+    {{#each rss}}
+    <td>{{this.ans62}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end the barbaric practice of factory farming and switch to free range animal farming?: </th>
+    {{#each rss}}
+    <td>{{this.ans63}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to safeguard animal welfare?: </th>
+     {{#each rss}}
+    <td>{{this.ans64}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to keep control of farm and ranch land in the hands of family-run proprietorships which leads to fair and competitive agricultural markets which in turn support healthy socioeconomic conditions in rural communities?: </th>
+    {{#each rss}}
+    <td>{{this.ans65}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to encourage local food production and sustainable farming practices?:</th>
+     {{#each rss}}
+    <td>{{this.ans66}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to eliminate food deserts and ensure the universal availability of nutritious food to everyone. Ban the use of carcinogenic food colorings, additives and hormones?: </th>
+    {{#each rss}}
+    <td>{{this.ans67}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to eliminate agricultural subsidies that amount to corporate welfare for big agribusiness?: </th>
+   {{#each rss}}
+    <td>{{this.ans68}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to promote vertical farming, which eliminates the need for fertilizers, pesticides and the expensive and polluting transportation of food to cities?: </th>
+     {{#each rss}}
+    <td>{{this.ans69}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to promote new farmers and farming opportunities, high-level farm conservation and investment in clean energy and renewable products?: </th>
+    {{#each rss}}
+    <td>{{this.ans70}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to encourage equitable access to healthy, preferably organic food, protect the bee population by cutting down on pesticides, develop strategies to address climate change and its effect on farming, and provide for improved care and welfare of animals?:</th>
+     {{#each rss}}
+    <td>{{this.ans71}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to encourage crop rotation and other practices that avoid the desertification of arable lands?: </th>
+     {{#each rss}}
+    <td>{{this.ans72}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to repair our aging and leaking drinking water pipes, meters and wastewater treatment plants and rid of all contaminants?: </th>
+     {{#each rss}}
+    <td>{{this.ans73}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to expand bus lines, subway systems, high speed rail and repair/replace older rail and other means of public transportation?: </th>
+   {{#each rss}}
+    <td>{{this.ans74}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reduce public transit fares to broaden access and take more cars off the road?: </th>
+    {{#each rss}}
+    <td>{{this.ans75}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to classify the internet as a public utility and bring the country online with universal high-speed community broadband that covers rural communities?: </th>
+   {{#each rss}}
+    <td>{{this.ans76}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to expand public parks, public libraries and free community spaces?: </th>
+     {{#each rss}}
+    <td>{{this.ans77}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for guaranteed housing?:</th>
+     {{#each rss}}
+    <td>{{this.ans78}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for AT LEAST a $15 Federal Minimum Wage? Please state what you feel the minimum wage should be (Enter under the "Other" box):</th>
+     {{#each rss}}
+    <td>{{this.ans79}}</td>
+    {{/each}}
+  </tr>
+
+  <tr>
+    <th>Will you fight for AT LEAST a $15 Federal Minimum Wage? Please state what you feel the minimum wage should be (Enter under the "Other" box):</th>
+     {{#each rss}}
+    <td>{{this.ans80}}</td>
+    {{/each}}
+  </tr>
+  
+    <tr>
+    <th>Will you fight to raise the tipped minimum wage from $2.13 an hour to $15 an hour?: </th>
+    {{#each rss}}
+    <td>{{this.ans81}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for Universal Basic Income? If "Yes", please enter under "Other" what you think the amount should be and the frequency with which it is issued (weekly, monthly, bi-monthly etc.): </th>
+    {{#each rss}}
+    <td>{{this.ans82}}</td>
+    <td>{{this.universal_income}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you believe in a Universal Basic Income will you fight to tie the amount to inflation?: </th>
+     {{#each rss}}
+    <td>{{this.ans83}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight for a Federal Jobs Guarantee?: </th>
+     {{#each rss}}
+    <td>{{this.ans84}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for paid maternity leave?:</th>
+     {{#each rss}}
+    <td>{{this.ans85}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for paid paternity leave?:</th>
+     {{#each rss}}
+    <td>{{this.ans86}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to require employers to provide a minimum of 12 weeks of paid family leave? How many weeks do you believe is appropriate? (Enter under the "Other" box): </th>
+     {{#each rss}}
+    <td>{{this.ans87}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require employers to provide twelve weeks of paid medical leave? How many weeks do you believe is appropriate? (Enter under the "Other" box): </th>
+    {{#each rss}}
+    <td>{{this.ans88}}</td>
+    <td>{{this.emp_medical_leave}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require employers to provide paid vacation and sick leave so that parents can stay home to take care of a sick child?: </th>
+   {{#each rss}}
+    <td>{{this.ans89}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to increase paid vacation leave?: </th>
+     {{#each rss}}
+    <td>{{this.ans90}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to support the rights of employees to organize into unions, collectively bargain and strike?: </th>
+     {{#each rss}}
+    <td>{{this.ans91}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to grant workers the option to collectively purchase factories and plants as an alternative to shutting them down?:</th>
+    {{#each rss}}
+    <td>{{this.ans92}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to socialize the workplace by encouraging the creation of worker cooperatives?: </th>
+     {{#each rss}}
+    <td>{{this.ans93}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require overtime pay across the board and work against practices to circumvent overtime pay, such as averaging hours over longer pay periods?:</th>
+ {{#each rss}}
+<td>{{this.ans94}}</td>
+{{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to outlaw unpaid internships that exploit young adults entering the workforce?:</th>
+     {{#each rss}}
+    <td>{{this.ans95}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to remove stigmas, to legalize sex work and for better protection of sex workers?: </th>
+     {{#each rss}}
+    <td>{{this.ans96}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to make public education free from pre-kindergarten through college (community college, public universities and trade schools)?:</th>
+    {{#each rss}}
+    <td>{{this.ans97}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ensure access to universal childcare and Head Start programs?: </th>
+     {{#each rss}}
+    <td>{{this.ans98}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight for free school breakfast, lunch, dinner?: </th>
+     {{#each rss}}
+    <td>{{this.ans99}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for school choice? If no, please explain under the "Other" box?: </th>
+     {{#each rss}}
+    <td>{{this.ans100}}</td>
+    <td>{{this.school_chooice}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for additional school funding for under performing schools?:</th>
+     {{#each rss}}
+    <td>{{this.ans101}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to create a framework for school discrimination and bullying policies (to protect minority students)?: </th>
+     {{#each rss}}
+    <td>{{this.ans102}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to move away from Standardized Testing and Common Core?: </th>
+     {{#each rss}}
+    <td>{{this.ans103}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to teach critical thinking, creativity, inquisitiveness, skepticism, cooperation, and participatory learning over memorization and obedience?< /th>
+    {{#each rss}}
+    <td>{{this.ans104}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to keep student-to-teacher ratios low?:</th>
+     {{#each rss}}
+    <td>{{this.ans105}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reverse the privatization of schools and to support high-quality free online supplemental learning?:</th>
+    {{#each rss}}
+    <td>{{this.ans106}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to encourage mentoring and expanding support for special education services and after-school extracurricular programs?:</th>
+   {{#each rss}}
+    <td>{{this.ans107}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to raise teacher pay, protect teachers’ unions and make sure that they have the resources needed to educate effectively and be able to shine, without having to spend their own money on school supplies for their classroom and students?:</th>
+    {{#each rss}}
+    <td>{{this.ans108}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ensure quality curriculum and for textbooks that accurately portray science and our nation’s history?:</th>
+    {{#each rss}}
+    <td>{{this.ans109}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to teach safe sex in order to keep sexually transmitted diseases and unplanned pregnancies low?:</th>
+     {{#each rss}}
+    <td>{{this.ans110}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to abolish the $1.3 trillion in student loan debt that is shackling a generation of young people?:</th>
+    {{#each rss}}
+    <td>{{this.ans111}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to Boost America’s high-tech innovation with investments in basic research and STEM education?:</th>
+    {{#each rss}}
+    <td>{{this.ans112}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for a Wealth Tax? *:</th>
+     {{#each rss}}
+    <td>{{this.ans113}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to restore higher taxes on corporations and the wealthy, requiring them to pay their fair share of the costs involved in the public infrastructure and services that power their companies?:</th>
+    {{#each rss}}
+    <td>{{this.ans114}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to increase the inheritance tax for the rich?:</th>
+     {{#each rss}}
+    <td>{{this.ans115}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to raise the capital gains tax which allows billionaires to pay a lower tax rate than nurses and truck drivers?:</th>
+   {{#each rss}}
+    <td>{{this.ans116}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to close tax loopholes that allow multi-billion dollar corporations to pay effective tax rates of zero?:</th>
+    {{#each rss}}
+    <td>{{this.ans117}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end corporate welfare as we know it?:</th>
+     {{#each rss}}
+    <td>{{this.ans118}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban corporate inversions and the use of offshore tax havens that cost our country more than $150 billion in annual tax revenue?:</th>
+     {{#each rss}}
+    <td>{{this.ans119}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to revive Glass-Steagall and break up the big banks?:</th>
+     {{#each rss}}
+    <td>{{this.ans120}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pass financial transactions tax and regulate the sale of derivatives?:</th>
+     {{#each rss}}
+    <td>{{this.ans121}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reduce and cap credit card interest rates?:</th>
+     {{#each rss}}
+    <td>{{this.ans122}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reign in corporate power by breaking up monopolies, enforcing antitrust laws and reversing the consolidation of businesses?:</th>
+    {{#each rss}}
+    <td>{{this.ans123}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban corporate stock buybacks that are used to manipulate the stock market and taxable income, to reduce investment in R&D, and to inflate CEO compensation?:</th>
+    {{#each rss}}
+    <td>{{this.ans124}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to eliminate conflicts of interest and increase transparency at the Federal Reserve, ensuring that it operates as a public bank for the people of the US?:</th>
+    {{#each rss}}
+    <td>{{this.ans125}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to enforce stricter oversight of banks, revoking the banking licenses for those that repeatedly engage in criminal, fraudulent, discriminatory and negligent activity at the public’s expense?:</th>
+    {{#each rss}}
+    <td>{{this.ans126}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to immediately revoke the licenses of banks found to be financing terrorism (foreign and domestic) and international drug cartels that presently get off with minor fines?:</th>
+    {{#each rss}}
+    <td>{{this.ans127}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to prohibit banks from writing off fines from criminal activity as tax deductions?:</th>
+     {{#each rss}}
+    <td>{{this.ans128}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to expand public banking and postal banking, charter public banks in each state, with regional and city banks, and support a national postal bank, similar to those in many developed nations?</th>
+    {{#each rss}}
+    <td>{{this.ans129}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end too-big-to-jail and hold accountable financial executives who defraud the public?:</th>
+    {{#each rss}}
+    <td>{{this.ans130}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pass anti-corruption laws by referendum, where possible, and fight for a constitutional amendment that declares that corporations are not people and money is not speech?:</th>
+    {{#each rss}}
+    <td>{{this.ans131}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight for better representation for all American territories (American Samoa, US Virgin Islands, Guam and the Northern Mariana Islands?), and for them to receive the same benefits as all US Citizens?:</th>
+    {{#each rss}}
+    <td>{{this.ans132}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Do you know what Modern Monetary Theory (MMT) is?:</th>
+     {{#each rss}}
+    <td>{{this.ans133}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you answered “Yes” to knowing what MMT is, please explain how you would answer the common challenge to progressive policies: “How would you pay for it?” through the lens of MMT:</th>
+    {{#each rss}}
+    <td>{{this.ans134}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>If you answered “No” to knowing what MMT is, would you be willing to learn more from MMT economic experts about how federal spending is not related to tax collection?:</th>
+    {{#each rss}}
+    <td>{{this.MMT}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to include churches as tax paying entities?:</th>
+     {{#each rss}}
+    <td>{{this.ans135}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish private prisons, which incentivize inhumane conditions and high recidivism?:</th>
+     {{#each rss}}
+    <td>{{this.ans136}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to shut down the school to prison pipeline, which targets people of color?:</th>
+     {{#each rss}}
+    <td>{{this.ans137}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th> Will you fight to replace punitive incarceration with a restorative justice system that focuses on rehabilitating people which studies show is the most effective criminal justice system in the world?:</th>
+    {{#each rss}}
+    <td>{{this.ans138}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban the practice of using arrest and incarceration quotas?:</th>
+     {{#each rss}}
+    <td>{{this.ans139}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to abolish the death penalty?</th>
+     {{#each rss}}
+    <td>{{this.ans140}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban the felony checkbox on employment forms and help pave a path to jobs upon release from prison?:</th>
+     {{#each rss}}
+    <td>{{this.ans141}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to demilitarize police by banning and reversing the transfer of military weapons to domestic police forces?:</th>
+    {{#each rss}}
+    <td>{{this.ans142}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to end Section 1033, which would stop militarizing the police with military spare equipment using tax dollars?:</th>
+    {{#each rss}}
+    <td>{{this.ans143}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end Section 1033, which would stop militarizing the police with military spare equipment using tax dollars?</th>
+    {{#each rss}}
+    <td>{{this.ans144}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reallocate funds from ballooning police budgets back to ailing schools and social services?:</th>
+   {{#each rss}}
+    <td>{{this.ans145}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to review all forced mandatory sentencing cases and release prisoners convicted of nonviolent minor drug charges?:</th>
+     {{#each rss}}
+    <td>{{this.ans146}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to create new laws for the allowable use of force?:</th>
+   {{#each rss}}
+    <td>{{this.ans147}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to eliminate mandatory minimums which result in sentencing disparities between Black, Latino and White people?:</th>
+   {{#each rss}}
+    <td>{{this.ans148}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to end the criminalization of mental illness that puts more mentally ill people in prisons than treatment facilities?:</th>
+   {{#each rss}}
+    <td>{{this.ans149}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish government torture, indefinite detention and extrajudicial assassination?:</th>
+     {{#each rss}}
+    <td>{{this.ans150}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to defend habeas corpus?:</th>
+     {{#each rss}}
+    <td>{{this.ans151}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to take marijuana off the federal government’s list of outlawed drugs?:</th>
+     {{#each rss}}
+    <td>{{this.ans152}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for the Federal LEGALIZATION (not decriminalization) of MEDICAL marijuana?:</th>
+     {{#each rss}}
+    <td>{{this.ans153}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for the Federal LEGALIZATION (not decriminalization) of RECREATIONAL marijuana?:</th>
+     {{#each rss}}
+    <td>{{this.ans154}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>If marijuana is legalized, will you fight to expunge records?:</th>
+     {{#each rss}}
+    <td>{{this.ans155}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end what amounts to slave labor at prisons, where inmates are forced to work for pennies an hour producing goods for large corporations?:</th>
+    {{#each rss}}
+    <td>{{this.ans156}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to decriminalize all drug use?:</th>
+    {{#each rss}}
+    <td>{{this.ans157}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to expunge the records of those convicted of drug use?:</th>
+     {{#each rss}}
+    <td>{{this.ans158}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for Reparations?:</th>
+     {{#each rss}}
+    <td>{{this.ans159}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to support and pass legislation making lynching a federal hate crime?:</th>
+     {{#each rss}}
+    <td>{{this.ans160}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to Defund the Pentagon and End the Endless Wars? If yes, what percentage reduction would you fight for? (Enter under the "Other" box):</th>
+    {{#each rss}}
+    <td>{{this.ans161}}</td>
+    <td>{{this.pentagon_endlesswar}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban the practice of no-bid government contracts?:</th>
+     {{#each rss}}
+    <td>{{this.ans162}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to end wars of aggression, preemptive wars and regime change?:</th>
+     {{#each rss}}
+    <td>{{this.ans163}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to return habeas corpus and due process?:</th>
+     {{#each rss}}
+    <td>{{this.ans164}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to stop invading sovereign airspace with drones?:</th>
+     {{#each rss}}
+    <td>{{this.ans165}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to ban the use of automated military weapons including automated drones?:</th>
+     {{#each rss}}
+    <td>{{this.ans166}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end the complete lack of transparency and accountability at the Defense Department?:</th>
+     {{#each rss}}
+    <td>{{this.ans167}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to restore congressional authority over the Defense programs and the budget. Account for the trillions in missing funds?:</th>
+    {{#each rss}}
+    <td>{{this.ans168}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to enforce the War Powers Act and restore that authority to Congress?:</th>
+     {{#each rss}}
+    <td>{{this.ans169}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require Congress to vote on a formal declaration of war before funding can be allocated?:</th>
+    {{#each rss}}
+    <td>{{this.ans170}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to repeal the 2001 Authorization for Use of Military Force, which the executive branch has treated as a blank check for endless war?:</th>
+   {{#each rss}}
+    <td>{{this.ans171}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to ban the use of overly-broad, ill-defined and indefinite Authorization of Use for Military Forces (AUMFs) that place no constraints on the executive branch’s ability to wage war?:</th>
+   {{#each rss}}
+    <td>{{this.ans172}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to restore international goodwill, confidence and moral authority in the U.S. by ending world hunger and extreme poverty?:</th>
+     {{#each rss}}
+    <td>{{this.ans173}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to strengthen and enforce the U.N. Universal Declaration of Human Rights?:</th>
+   {{#each rss}}
+    <td>{{this.ans174}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to lead the international community in clean energy innovation and combating climate change?:</th>
+   {{#each rss}}
+    <td>{{this.ans175}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to close Guantanamo and return it to Cuba?:</th>
+     {{#each rss}}
+    <td>{{this.ans176}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to prosecute officials who committed torture in violation of the Geneva Convention?:</th>
+     {{#each rss}}
+    <td>{{this.ans177}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to support a two-state solution that recognizes Palestine’s right to exist with self-determination and governance?:</th>
+   {{#each rss}}
+    <td>{{this.ans178}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to cut off military aid to countries that violate human rights and international law?:</th>
+   {{#each rss}}
+    <td>{{this.ans179}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to stop propping up unelected regimes abroad and meddling in foreign elections?:</th>
+   {{#each rss}}
+    <td>{{this.ans180}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to de-escalate tensions and proxy-wars with Russia and resume bilateral nuclear stockpile reductions?:</th>
+   {{#each rss}}
+    <td>{{this.ans181}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to join the global community in working towards a nuclear-free world?:</th>
+     {{#each rss}}
+    <td>{{this.ans182}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to stop the wars in the Middle East and North Africa that have destabilized countries such as Syria and Libya, destroying their infrastructure and forcing millions to leave their homes in desperation?:</th>
+    {{#each rss}}
+    <td>{{this.ans183}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to end the drug war which exports cartel violence and corruption to Latin American countries, forcing many to flee to the U.S.?:</th>
+   {{#each rss}}
+    <td>{{this.ans184}}</td>
+
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pursue diplomatic solutions with North Korea and Iran and halt efforts to destabilize Venezuela?:</th>
+    {{#each rss}}
+    <td>{{this.ans185}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to halt the arms race on autonomous weapons by negotiating an international treaty banning their development and use as we did with chemical and laser weapons?:</th>
+    {{#each rss}}
+    <td>{{this.ans186}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reverse trade policies in agreements like NAFTA, CAFTA and PNTR with China that have outsourced millions of jobs and created a global race to the bottom in wages?:</th>
+   {{#each rss}}
+    <td>{{this.ans187}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reverse trade policies in agreements like NAFTA, CAFTA and PNTR with China that have outsourced millions of jobs and created a global race to the bottom in wages?:</th>
+    {{#each rss}}
+    <td>{{this.ans188}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to embrace fair trade and domestic policies that incentivize companies to keep good paying jobs in America?:</th>
+    {{#each rss}}
+    <td>{{this.ans189}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reverse the outsourcing of American jobs and renegotiate trade agreements that have proven disastrous to workers worldwide?:</th>
+    {{#each rss}}
+    <td>{{this.ans190}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to make sure every human being is treated equally and equitably no matter who they are, how they identify or what religion they follow and fight for their rights in any and every societal situation?:</th>
+    {{#each rss}}
+    <td>{{this.ans191}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish ICE?:</th>
+     {{#each rss}}
+    <td>{{this.ans192}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reverse the criminalization of the 11 million undocumented immigrants in America and create a swift pathway to citizenship?:</th>
+    {{#each rss}}
+    <td>{{this.ans193}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pass the Dream Act and naturalize all undocumented immigrants who were brought to the U.S. as children?:</th>
+    {{#each rss}}
+    <td>{{this.ans194}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to expand DACA and DAPA?:</th>
+     {{#each rss}}
+    <td>{{this.ans195}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to ensure that Medicare for all extends to undocumented immigrants and allow them to purchase health insurance through the ACA in the meantime?:</th>
+   {{#each rss}}
+    <td>{{this.ans196}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to dismantle inhumane deportation programs and detention centers?:</th>
+     {{#each rss}}
+    <td>{{this.ans197}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to protect refugees who come to America and their right to return from trips abroad?:</th>
+     {{#each rss}}
+    <td>{{this.ans198}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to return to a “revolving door/circular flow” policy with regards to Mexico border immigration. Where temporary workers are free to enter the country with the knowledge they can easily and freely return home?:</th>
+    {{#each rss}}
+    <td>{{this.ans199}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end sub-minimum wage for workers with disabilities while guaranteeing jobs and living wages in the community for all?:</th>
+   {{#each rss}}
+    <td>{{this.ans200}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pass the Disability Integration Act, to provide seniors and people with disabilities home and community-based services as an alternative to institutionalization, ensuring access to long term services and support?:</th>
+    {{#each rss}}
+    <td>{{this.ans201}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to improve and enforce the Americans with Disabilities Act?:</th>
+     {{#each rss}}
+    <td>{{this.ans202}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end the widespread incarceration of people with mental disabilities and enforce the Supreme Court’s Olmstead decision to provide people with mental disabilities community-based support?:</th>
+    {{#each rss}}
+    <td>{{this.ans203}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reject the privatization of disability and aging services?:</th>
+     {{#each rss}}
+    <td>{{this.ans204}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to fund non-governmental organizations and initiatives that assist with parent's health and family planning?:</th>
+    {{#each rss}}
+    <td>{{this.ans205}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to protect access to contraception and the availability of a safe and legal abortion?:</th>
+    {{#each rss}}
+    <td>{{this.ans206}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to end the practice of genital mutilation, underage forced marriage, and the abuse of sex workers?:</th>
+   {{#each rss}}
+    <td>{{this.ans207}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight against any enforcement that does not take into account the dire circumstances under which many women make survival choices?:</th>
+    {{#each rss}}
+    <td>{{this.ans208}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight for the passage of the Equal Rights Amendment and an increase in Women Infants and Children (WIC) funding:</th>
+    {{#each rss}}
+    <td>{{this.ans209}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to make the U.S. a world leader in women’s rights?:</th>
+     {{#each rss}}
+    <td>{{this.ans210}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to support the Paycheck Fairness Act to end wage discrimination based on gender?:</th>
+     {{#each rss}}
+    <td>{{this.ans211}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish segregation by sexual orientation?:</th>
+     {{#each rss}}
+    <td>{{this.ans212}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to defend against the rollback of achieved rights, including spousal benefits, and back the strengthening of laws against hate propaganda and hate crimes?:</th>
+     {{#each rss}}
+    <td>{{this.ans213}}</td>
+    {{/each}}
+
+  </tr>
+    <tr>
+    <th>Will you fight to support public education and legal action to ensure that the Supreme Court’s 2015 marriage equality decision is enforced and not eroded by measures designed to discriminate against gay and lesbian couples and their children?:</th>
+    {{#each rss}}
+    <td>{{this.ans214}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to support Native rights to challenge and reject the domination of colonial nation-states?:</th>
+     {{#each rss}}
+    <td>{{this.ans215}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to recognize the sovereignty of Native tribal governments and call upon the U.S. government to deal in good faith and honor treaty obligations?:</th>
+   {{#each rss}}
+    <td>{{this.ans216}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to uphold the rights of Indigenous people to defend and protect their lives, natural resources, sacred sites and culture?:</th>
+   {{#each rss}}
+    <td>{{this.ans217}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you seek to follow and learn from the example of Native people who are consistently at the front lines of resistance for protecting water, air and land?:</th>
+   {{#each rss}}
+    <td>{{this.ans218}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to support the rights of Native people to defend their freedom and their lives?:</th>
+    {{#each rss}}
+    <td>{{this.ans219}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to reduce veteran homelessness to zero with decent housing and jobs?:</th>
+    {{#each rss}}
+    <td>{{this.ans220}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ensure that all returning service members are fully aware of all benefits to which they are entitled. Give assistance to find out where and how to make use of them?:</th>
+     {{#each rss}}
+    <td>{{this.ans221}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to remove the chain of command for investigating and prosecuting claims of rape and sexual harassment in the military?:</th>
+    {{#each rss}}
+    <td>{{this.ans222}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to change the status of veterans who were discharged due solely to their sexual orientation from involuntary to voluntary?:</th>
+    {{#each rss}}
+    <td>{{this.ans223}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to pass federal legislation mandating that no undocumented veteran can be deported after serving our country?:</th>
+   {{#each rss}}
+    <td>{{this.ans224}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to require that the Dept. of Veterans Affairs provide comprehensive healthcare and mental healthcare to all veterans and their families, including those with post traumatic stress disorder and traumatic brain injury?:</th>
+    {{#each rss}}
+    <td>{{this.ans225}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Will you fight to provide assistance to all service people exposed to Agent Orange and other toxins including contaminated soils?:</th>
+    {{#each rss}}
+    <td>{{this.ans226}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to reduce backlog claims at the Veterans Administration?:</th>
+    {{#each rss}}
+    <td>{{this.ans227}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ensure that all leases and use of VA facilities solely benefit veterans and their families?:</th>
+    {{#each rss}}
+    <td>{{this.ans228}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to establish a complete range of medical, housing, right of work return, free college tuition and post-service employment assistance?:</th>
+    {{#each rss}}
+    <td>{{this.ans229}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to affirm the right to free speech and free assembly?:</th>
+     {{#each rss}}
+    <td>{{this.ans230}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to restore the fairness doctrine and equal time rule in media coverage of politics?:</th>
+    {{#each rss}}
+    <td>{{this.ans231}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to strengthen protections and rewards for government and corporate whistleblowers, and increase penalties for those who conceal government crimes and negligence?:</th>
+    {{#each rss}}
+    <td>{{this.ans232}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to protect the Freedom of Information Act and mandate a faster government response rate?:</th>
+   {{#each rss}}
+    <td>{{this.ans233}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to ban assault rifles, armor piercing rounds, bump stocks, high capacity magazines, and other guns that are only and just specifically for war and killing as many humans as possible quickly?:</th>
+    {{#each rss}}
+    <td>{{this.ans234}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to initiate a federal buy-back program for these weapons?:</th>
+     {{#each rss}}
+    <td>{{this.ans235}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to institute universal background checks?:</th>
+   {{#each rss}}
+    <td>{{this.ans236}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to prevent the accumulation of private arsenals and close the gun show loophole, which allows the private sale of firearms circumventing background checks?:</th>
+  {{#each rss}}
+    <td>{{this.ans237}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to require waiting periods to get firearms and allow hospitals to collect statistics on gun violence?:</th>
+    {{#each rss}}
+    <td>{{this.ans238}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to re-assert the human right to privacy and the Fourth Amendment?:</th>
+   {{#each rss}}
+    <td>{{this.ans239}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to repeal the Patriot Act and abolish mass surveillance?:</th>
+     {{#each rss}}
+    <td>{{this.ans240}}</td>
+     {{/each}}
+  </tr>
+    <tr>
+    <th>Will you fight to protect net neutrality?:</th>
+     {{#each rss}}
+    <td>{{this.ans241}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to abolish daylight savings:</th>
+     {{#each rss}}
+    <td>{{this.ans242}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Without religion would people become more corrupt, less corrupt, or be equally morally corrupt?</th>
+    {{#each rss}}
+    <td>{{this.ans243}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Are intentions or outcomes more important when judging whether actions are moral?:</th>
+    {{#each rss}}
+    <td>{{this.ans244}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Are people ethically obligated to improve themselves?:</th>
+    {{#each rss}}
+    <td>{{this.ans245}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Do all people have equal value regardless of their actions or is a person’s value based on their actions?:</th>
+   {{#each rss}}
+    <td>{{this.ans246}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Is it just and right to deny entry to a country when doing so probably means death for an immigrant and their family?:</th>
+     {{#each rss}}
+    <td>{{this.ans247}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Is poverty in society inevitable?:</th>
+     {{#each rss}}
+    <td>{{this.ans248}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What fictional character(s): TV/movie, storybook, comic or otherwise resonates with you the most?:</th>
+     {{#each rss}}
+    <td>{{this.ans249}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>What are your Top 3 favorite Pixar movies?:</th>
+     {{#each rss}}
+    <td>{{this.ans250}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you were an animal, what animal would you be?</th>
+   {{#each rss}}
+    <td>{{this.ans251}}</td>
+     {{/each}}
+  </tr>
+  <tr>
+    <th>You’re President. You can pass (or repeal) ONE piece of legislation no strings attached. Pretend all bureaucracy doesn’t exist or apply. What are you using your “Golden Ticket” on?:</th>
+     {{#each rss}}
+    <td>{{this.ans252}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Is it more important to help yourself, help your family, help your society, or help the world? You can only pick one.:</th>
+    {{#each rss}}
+    <td>{{this.ans253}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you could press a button and receive a million dollars, but one stranger would die, would you press the button? And if so, how many times:</th>
+     {{#each rss}}
+    <td>{{this.ans254}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Do people in wealthier countries have a moral obligation to help those in poorer countries?:</th>
+    {{#each rss}}
+    <td>{{this.ans255}}</td>
+    {{/each}}
+  </tr>
+   <tr>
+    <th>Would a government run with algorithms, A.I., and statistics be better or worse than the government we have now?:</th>
+    {{#each rss}}
+    <td>{{this.ans256}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Could societies exist without a way to transfer value (i.e. without money or a barter system)?:</th>
+   {{#each rss}}
+    <td>{{this.ans257}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Considering that the technology exists to enable a real democracy, would a true democracy (every single person can vote on every single legislation) be advantageous or detrimental?:</th>
+     {{#each rss}}
+    <td>{{this.ans258}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Should tax payers have the option to explicitly say what they don’t want their tax dollars spent on?:</th>
+     {{#each rss}}
+    <td>{{this.ans259}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Can a society exist without laws?:</th>
+     {{#each rss}}
+    <td>{{this.ans260}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Is some degree of censorship necessary?:</th>
+     {{#each rss}}
+    <td>{{this.ans261}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Has the invention of the atomic bomb made the world a more peaceful place?:</th>
+     {{#each rss}}
+    <td>{{this.ans262}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What is your vision for America and for your district? How will your policies directly impact the people?:</th>
+  {{#each rss}}
+    <td>{{this.ans263}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Some people believe that if life has no purpose, then there is no reason for living. While others think that if life has no purpose, that frees a person to find/create and follow their own personal purpose. Which is a more valid point of view or are they both equally valid?:</th>
+   {{#each rss}}
+    <td>{{this.ans264}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>If and when you join government you’ll be working with career politicians on both sides of the aisle. How do you intend to get support for your legislation? Are you willing to make concessions? To what extent? Is there anything you won’t concede on? What policies are your priority/have to pass with zero concessions?:</th>
+   {{#each rss}}
+    <td>{{this.ans265}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What do you have trouble forgiving yourself for?:</th>
+  {{#each rss}}
+    <td>{{this.ans266}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>When, if ever, is taking a human life justified?:</th>
+    {{#each rss}}
+    <td>{{this.ans267}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>Should you be elected, are you willing to make concessions? When? To what extent?:</th>
+     {{#each rss}}
+    <td>{{this.ans268}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Should there be limitations on the right to free speech? If yes, what should they be?:</th>
+    {{#each rss}}
+    <td>{{this.ans269}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>A mother steals a loaf of bread to feed her children, what should her punishment be, if any?:</th>
+    {{#each rss}}
+    <td>{{this.ans270}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>You see a spider lurking in the corner of your shower and it’s been there for days, trapped. And every time you turn the water on, it tries to run for its life to escape, but it can’t get out. So what do you do?:</th>
+    {{#each rss}}
+    <td>{{this.ans271}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>How do you think we should handle people who rape children?:</th>
+    {{#each rss}}
+    <td>{{this.ans272}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Have you ever worked a food service, retail, or customer service job? How good a memory do you have of that job and will it influence how you do your job in Congress at all?:</th>
+    {{#each rss}}
+    <td>{{this.ans273}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    
+    <th>Does hardship make a person stronger? If so, under what conditions and at what point is it too much hardship? If not, what makes a person stronger?:</th>
+   {{#each rss}}
+    <td>{{this.ans274}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What is the most important goal every person should have?:</th>
+  {{#each rss}}
+    <td>{{this.ans275}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What are you capable of achieving?:</th>
+     {{#each rss}}
+    <td>{{this.ans276}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>By what standards do you judge yourself?:</th>
+     {{#each rss}}
+    <td>{{this.ans277}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What two questions would you ask to get the most information about who a person truly is?:</th>
+     {{#each rss}}
+    <td>{{this.ans278}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>With no laws or rules to influence your behavior, how do you think you would behave?:</th>
+     {{#each rss}}
+    <td>{{this.ans279}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>What is the most important right our government allows for?:</th>
+     {{#each rss}}
+    <td>{{this.ans280}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>How should we measure the productivity of a society?:</th>
+     {{#each rss}}
+    <td>{{this.ans281}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What causes the most harm in the world, but is completely avoidable?:</th>
+     {{#each rss}}
+    <td>{{this.ans282}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>What is the biggest threat to the social contract in our country?:</th>
+     {{#each rss}}
+    <td>{{this.ans283}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What rights should every human have? Do those rights change based on age, race, identity?:</th>
+     {{#each rss}}
+    <td>{{this.ans284}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>At what point is overthrowing a government ethical, considering all the violence a revolution usually entails?:</th>
+     {{#each rss}}
+    <td>{{this.ans285}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Should euthanasia be legal on animals? Humans who actively consent? Why or why not? Would you make any exceptions?:</th>
+     {{#each rss}}
+    <td>{{this.ans286}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>How far should governments go to prevent its citizens from causing harm to themselves?:</th>
+     {{#each rss}}
+    <td>{{this.ans287}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If scientists could accurately predict who was more likely to commit crimes, what should society do with that information?:</th>
+     {{#each rss}}
+    <td>{{this.ans288}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>If you could start a country from scratch, what would it be like?:</th>
+     {{#each rss}}
+    <td>{{this.ans289}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>What should the role of a government be, what boundaries and limitations should it have?:</th>
+     {{#each rss}}
+    <td>{{this.ans290}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What would happen if a maximum income of $500,000 a year was implemented?:</th>
+     {{#each rss}}
+    <td>{{this.ans291}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>What would happen to a society in which no one had to work, and everyone was provided enough food/water/shelter/healthcare for free?:</th>
+    {{#each rss}}
+    <td>{{this.ans292}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>If all humans want the same basic things, why is there so much violence and strife between people?:</th>
+     {{#each rss}}
+    <td>{{this.ans293}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Under our government are there any rights that you have but shouldn’t? How about rights you don’t have but should (that have not been specified within this survey)?:</th>
+   {{#each rss}}
+    <td>{{this.ans294}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Has social media been a net positive or a net negative for our society? Why?:</th>
+     {{#each rss}}
+    <td>{{this.ans295}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>How much privacy are you willing to sacrifice for safety?:</th>
+     {{#each rss}}
+    <td>{{this.ans296}}</td>
+    {{/each}}
+  </tr>
+    <tr>
+    <th>For the above question: “What two questions would you ask to get the most information about who a person truly is?” Answer your own two questions</th>
+    {{#each rss}}
+    <td>{{this.ans297}}</td>
+    {{/each}}
+  </tr>
+  <tr>
+    <th>Will you fight to the death for free tacos, vegetarian/vegan or otherwise, on EVERY Taco Tuesday?!?!:</th>
+   {{#each rss}}
+    <td>{{this.ans298}}</td>
+    {{/each}}
+  </tr>
+</table>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
